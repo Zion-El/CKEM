@@ -1,0 +1,120 @@
+@import 'styles/main.css';
+
+.nav-container .active{
+    color: var(--yellow);
+    font-weight: 600;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.hero{
+    background-image: url('/assets/img/church2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-content{
+    /* z-index: ; */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+   
+
+}
+
+.social-icon a i{
+    color: #fff;
+    opacity: .8;
+}
+.social-icon a i:hover{
+    opacity: 1;
+}
+
+.pastor-socials a{
+    background-color: var(--scarlet);
+    height: 60px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.pastor-card{
+    width: 100%;
+    height: 300px;
+}
+
+.pastor-social-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.pastor-social-icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border: 1px solid var(--graz);
+    color: var(--graz);
+    transition: all .3s ease-in-out;
+}
+.pastor-social-icon a:hover{
+    background-color: var(--blac);
+    color: white;
+}
+
+
+.sermon-card{
+    width: 100%;
+    height: 420px;
+}
+
+.sermon-img{
+    height: 85%;
+    position: relative;
+}
+.sermon-overlay{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sermon-overlay button{
+    width: 40%;
+    padding: 6px 0;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+    color: #fff;
+}
+.sermon-overlay button:hover{
+    background-color: var(--blac);
+    color: var(--graz);
+    border-radius: 4px;
+    border: 1px solid var(--graz);
+}
