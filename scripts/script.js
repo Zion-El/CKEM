@@ -1,9 +1,22 @@
-const api_key = 'a35a14e20f166d89b77f1213aa3f50c4'
+// ---------------------------------------------------------
+// HANDLE NAVBAR
+// ---------------------------------------------------------
 
-const endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${api_key}`
+const sidebar = document.getElementById('sidebar');
+const toogler = document.getElementById('toogleBtn');
+const toogler_icon = document.getElementById('tooglerIcon');
 
-fetch(endpoint).then(
-    (res)=> res.json()
-).then(
-    (data)=> console.log(data)
-)
+function handleToggle() {
+    if (toogler_icon.classList.contains('fa-bars')) {
+        console.log('yes');
+        sidebar.style.transform = 'translateX(0)';
+        toogler_icon.classList.remove('fa-bars');
+        toogler_icon.classList.add('fa-times');
+    } else {
+        sidebar.style.transform = 'translateX(-800px)';
+        toogler_icon.classList.remove('fa-times');        
+        toogler_icon.classList.add('fa-bars');
+    }
+}
+
+toogler.addEventListener('click', handleToggle);

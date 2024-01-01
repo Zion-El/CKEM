@@ -1,9 +1,48 @@
 @import 'styles/main.css';
 
+.nav-container{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    
+}
+
+#sidebar{
+    transform: translateX(-800px);
+    transition: all .5s ease-in-out ;
+}
+
 .nav-container .active{
     color: var(--yellow);
     font-weight: 600;
     border-bottom: 2px solid var(--yellow);
+}
+
+@media screen and (max-width:768px) {
+    .nav-container{
+        position: absolute;
+        border-radius: 20px;
+        left: 5%;
+        top: 10vh;
+        height: 90vh;
+        width: 90%;
+        padding: 1.5rem;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .nav-container li a{
+        color: var(--blac);
+        margin: 2rem 0;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .nav-container .active{
+        color: var(--scarlet);
+        border-bottom: 2px solid var(--scarlet);
+    }
 }
 
 .hero{
