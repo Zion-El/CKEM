@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2cb29d167e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              scarlet: "#bd302d",
+              yellow: "#e2a822",
+              graz: "#d2d0b8",
+              ash: "#e6f1ef",
+              blac: "#2f2f2c",
+            },
+            FontFace: {
+              int: "Inter, San",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header
+      class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4] bg-blac"
+    >
+      <nav class="flex container justify-between items-center w-full">
+        <div>
+          <a href="/"
+            ><img
+              class="h-[60px] w-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+          /></a>
+        </div>
+
+        <ul id="sidebar" class="nav-container">
+          <div class="absolute opacity-10 z-[-1]">
+            <img src="/assets/img/ckem logo.png" alt="" />
+          </div>
+          <li><a class="text-white" href="/">Home</a></li>
+          <li>
+            <a class="text-white active" href="/pages/about.html">About Us</a>
+          </li>
+          <li><a class="text-white" href="/">Contact Us</a></li>
+          <li><a class="text-white" href="/">Donations</a></li>
+          <li><a class="text-white" href="/">Blog</a></li>
+          <button class="pryBtn block lg:hidden w-full shadow transition">
+            Watch Live
+          </button>
+        </ul>
+
+        <button class="pryBtn w-[150px] shadow transition hidden lg:block">
+          Watch Live
+        </button>
+        <button id="toogleBtn" class="text-graz block lg:hidden">
+          <i id="tooglerIcon" class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <input type="text" />
+
+    <section
+      style="background-image: url('/assets/img/worship.jpeg')"
+      class="banner"
+    >
+      <!-- <div class="overlay"></div> -->
+      <h1>CONTACT US</h1>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.752065526282!2d3.2093743741161!3d6.677608821355091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b99eeb1eca285%3A0xefdb0c28bc0ca484!2sCKEM%20INTERNATIONAL!5e0!3m2!1sen!2sng!4v1704633384151!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>CKEM INT'L HQ</h5>
+              <p>
+                5&6 Daniel Asuku Str, <br />Progress Estate, Off Obasanjo road,
+                <br />Ota, <br />
+                Ogun State.
+              </p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+234 80 XX XXX XXX</h5>
+              <p>
+                Monday 9AM - 6PM <br />
+                Tuesday 9AM - 8PM <br />
+                Wednesday 9AM - 6PM <br />
+                Thursday 9AM - 8PM <br />
+                Friday 9AM - 6PM <br />
+                Saturday 7AM - 2PM
+              </p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>ckeminternational@gmail.com</h5>
+              <p></p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <span>
+              <h6>LEAVE A MESSAGE</h6>
+            </span>
+            <input type="text" placeholder="Enter your name" required />
+            <input
+              type="email"
+              placeholder="Enter email address and Phone number"
+              required
+            />
+            <input type="text" placeholder="Enter your subject" required />
+            <textarea rows="8" Message placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn red-btn">SUBMIT NOW</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="container bg-black text-white w-full lg:w-[1560px] pt-[3rem]"
+    >
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-6">
+          <img src="" alt="Logo" />
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+          </p>
+
+          <div></div>
+        </div>
+        <div>
+          <h3 class="hd1">Quick Link</h3>
+        </div>
+        <div>
+          <h3 class="hd1">Contact Us</h3>
+        </div>
+        <div>
+          <h3 class="hd1">Recent Post</h3>
+        </div>
+      </div>
+
+      <div class="border-t py-3">
+        <p class="text-center text-[#f4f4f4]">
+          © 2024 CKEM INT'L. All Rights Reserved.
+        </p>
+      </div>
+
+      <script>
+        ((g) => {
+          var h,
+            a,
+            k,
+            p = "The Google Maps JavaScript API",
+            c = "google",
+            l = "importLibrary",
+            q = "__ib__",
+            m = document,
+            b = window;
+          b = b[c] || (b[c] = {});
+          var d = b.maps || (b.maps = {}),
+            r = new Set(),
+            e = new URLSearchParams(),
+            u = () =>
+              h ||
+              (h = new Promise(async (f, n) => {
+                await (a = m.createElement("script"));
+                e.set("libraries", [...r] + "");
+                for (k in g)
+                  e.set(
+                    k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                    g[k]
+                  );
+                e.set("callback", c + ".maps." + q);
+                a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                d[q] = f;
+                a.onerror = () => (h = n(Error(p + " could not load.")));
+                a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                m.head.append(a);
+              }));
+          d[l]
+            ? console.warn(p + " only loads once. Ignoring:", g)
+            : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+        })({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
+      </script>
+
+      <script src="scripts/script.js"></script>
+    </footer>
+  </body>
+</html>
