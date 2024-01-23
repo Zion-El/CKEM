@@ -63,7 +63,97 @@
     height: 100vh;
     position: relative;
     z-index: -1;
+    animation: change 20s infinite ease-in-out;
 }
+
+@media screen and (max-width:768px) {
+    .hero{
+        height: 85vh;
+    }
+}
+
+@keyframes change{
+    0%{
+      background-image: url(/assets/img/church2.jpg);
+    }
+    30%{
+      background-image: url(/assets/img/church1.jpg);
+    }
+    60%{
+      background-image: url(/assets/img/church2.jpg);
+    }
+    80%{
+      background-image: url(/assets/img/church1.jpg);
+    }
+    100%{
+      background-image: url(/assets/img/church2.jpg);
+    }
+  
+  } 
+
+   .hero-content-container .box{
+    color:#fff;
+    background-color: transparent;
+    display: inline-block;
+    display: none;
+}
+   .hero-content-container .box.text-in{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	animation: textIn .5s ease;
+}
+ .hero-content-container .box.text-out{
+	animation: textOut .5s ease;
+}
+
+@keyframes textIn{
+	0%{
+		/* transform: translateY(100%); */
+        opacity: 1;
+	}
+	25%{
+		/* transform: translateY(100%); */
+        opacity: 0.75;
+	}
+	50%{
+		/* transform: translateY(100%); */
+        opacity: 0.50;
+	}
+	75%{
+		/* transform: translateY(100%); */
+        opacity: 0.25;
+	}
+	100%{
+		/* transform: translateY(0%); */
+        opacity: 0;
+	}
+}
+@keyframes textOut{
+	0%{
+		/* transform: translateY(100%); */
+        opacity: 0;
+	}
+	25%{
+		/* transform: translateY(100%); */
+        opacity: 0.25;
+	}
+	50%{
+		/* transform: translateY(100%); */
+        opacity: 0.50;
+	}
+	75%{
+		/* transform: translateY(100%); */
+        opacity: 0.75;
+	}
+	100%{
+		/* transform: translateY(0%); */
+        opacity: 1;
+	}
+}
+
+
 
 .hero-content{
     /* z-index: ; */
