@@ -5,6 +5,7 @@
 const sidebar = document.getElementById('sidebar');
 const toogler = document.getElementById('toogleBtn');
 const toogler_icon = document.getElementById('tooglerIcon');
+const navbar = document.getElementById('nav')
 
 function handleToggle() {
     if (toogler_icon.classList.contains('fa-bars')) {
@@ -20,3 +21,14 @@ function handleToggle() {
 }
 
 toogler.addEventListener('click', handleToggle);
+
+const ChangeBackground = () => {
+    console.log('hello')
+    if (window.scrollY >= 80) {
+      navbar.classList.add('header')
+    } else {
+        navbar.classList.remove('header')
+    }
+  };
+document.addEventListener('scroll', ChangeBackground)
+

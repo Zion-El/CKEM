@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/2cb29d167e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -36,8 +37,8 @@
     <title>CKEM</title>
   </head>
   <body class="relative">
-    <header class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4]">
-      <nav class="flex container justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3  ">
+      <nav  class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -48,14 +49,15 @@
         </div>
 
         <ul id="sidebar" class="nav-container">
-          <div class="absolute opacity-10 z-[-1]">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
             <img src="/assets/img/ckem logo.png" alt="" />
           </div>
           <li><a class="text-white active" href="/">Home</a></li>
           <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-          <li><a class="text-white" href="/">Contact Us</a></li>
+          <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
+          <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
           <li><a class="text-white" href="/">Donations</a></li>
-          <li><a class="text-white" href="/">Blog</a></li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
             Watch Live
           </button>
@@ -121,25 +123,25 @@
     </section>
 
     <section class="lead-pastor bg-ash py-12">
-      <div class="container flex flex-col md:flex-col">
-        <div class="flex-1">
-          <img src="/assets/img/p2.jpg" alt="" />
+      <div class="container flex flex-col md:flex-row">
+        <div class="flex-1 flex justify-center items-center">
+          <img class="h-[500px]" src="/assets/img/p2.jpg" alt="" />
         </div>
         <div class="flex-1">
           <p class="font-[300] text-xl">Meet Our Lead Pastor</p>
           <h3 class="font-[600] text-2xl">Pastor (Dr) Dorcas Adetula</h3>
-          <hr />
-
-          <p class="font-[300] mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            eligendi soluta ex tempora vero.
-          </p>
-
-          <div class="pastor-socials">
+          
+          <div class="pastor-socials flex space-x-2 my-4">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             <a href=""><i class="fa-brands fa-x-twitter"></i></a>
           </div>
+          <hr />
+          <p class="font-[300] mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium animi dignissimos nesciunt perferendis doloremque exercitationem dolore voluptatem quas beatae, sint error molestiae similique, placeat quidem dicta eligendi debitis. Odio laudantium quis enim error? Iusto consequuntur animi magnam quia corrupti nam qui, a vero necessitatibus laboriosam tempore molestiae quos et molestias maxime, quae beatae quam. Eius dignissimos esse amet reprehenderit perferendis placeat fuga saepe quidem harum veritatis repudiandae aut, impedit laboriosam labore deserunt dicta iste! Vero temporibus, quibusdam, tempora, repellendus exercitationem provident ab unde modi amet itaque eos sed facere. Consequuntur, repellat iste quasi optio eaque sint earum quidem voluptatibus necessitatibus, eos, possimus officiis laboriosam rerum maxime dolor amet ex dicta. Odit architecto modi laudantium exercitationem nobis voluptatibus, dignissimos iusto a facilis nulla ipsa sapiente ab dolore beatae dicta magni perspiciatis placeat non minus voluptate nostrum ipsum veniam quos sit? Minus, tempora laudantium quasi unde omnis ullam fugiat neque obcaecati.
+          </p>
+
+
         </div>
       </div>
     </section>
@@ -221,6 +223,13 @@
               <p class="italic text-scarlet">by: Pastor Mic Mike</p>
             </div>
           </div>
+        </div>
+
+        <div class="w-full flex justify-center items-center mt-12">
+          <a href="/pages/sermons.html">
+            <button class="pryBtn w-[150px] shadow transition hidden lg:block">See More</button>
+          </a>
+          
         </div>
       </div>
     </section>
@@ -344,23 +353,44 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section class="content">
+      <div class="px-[2rem] lg:px-[4rem]">
         <div>
-          <h3>Locate Us</h3>
-          <div id="map" class="h-[400px] w-full"></div>
+          <div>
+            <h3 class="header-title">Our Locations</h3>
+            <div class="marker">
+              <div class="line"></div>
+              <div class="circle"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <section class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.752065526282!2d3.2093743741161!3d6.677608821355091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b99eeb1eca285%3A0xefdb0c28bc0ca484!2sCKEM%20INTERNATIONAL!5e0!3m2!1sen!2sng!4v1704633384151!5m2!1sen!2sng"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
         </div>
       </div>
     </section>
 
     <footer
-      class="container bg-black text-white w-full lg:w-[1560px] pt-[3rem]"
+      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
     >
       <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div class="space-y-6">
-          <img src="" alt="Logo" />
+        <div class="space-y-4">
+          <div class="flex space-x-2 justify-start items-center">
+            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+          </div>
+         
 
-          <p>
+          <p class="text-graz text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
           </p>
@@ -369,6 +399,12 @@
         </div>
         <div>
           <h3 class="hd1">Quick Link</h3>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Sermons</a></li>
+            <li><a href="">Our Events</a></li>
+            <li><a href="">Donations</a></li>
+          </ul>
         </div>
         <div>
           <h3 class="hd1">Contact Us</h3>
@@ -423,6 +459,11 @@
       </script>
 
       <script src="scripts/script.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      
+    <script src="script.js"></script>
     </footer>
   </body>
 </html>

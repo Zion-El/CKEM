@@ -108,6 +108,11 @@
     font-family: var(--pt);
 }
 
+@media screen and (max-width: 768px) {
+    .banner{
+        height: 30vh;
+    }
+}
 @media screen and (max-width: 425px) {
     .container{
         padding: 0 1rem;
@@ -116,3 +121,6 @@
         height: 40vh;
     }
 }
+
+
+/* ----------------- blog -------------------- */

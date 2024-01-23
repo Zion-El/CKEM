@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/landing.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                scarlet: '#bd302d',
+                yellow: '#e2a822',
+                graz: '#d2d0b8',
+                ash: '#e6f1ef',
+                blac: '#2f2f2c',
+              },
+               FontFace:{
+                int: 'Inter, San'
+               }
+            }
+          }
+        }
+    </script>
+    <title>CKEM</title>
+</head>
+<body>
+  <header  class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4] bg-blac">
+    <nav class="flex container justify-between items-center w-full ">
+      <div>
+        <a href="/"><img class="h-[60px] w-[60px]" src="/assets/img/ckem logo.png" alt="Logo"></a>
+      </div>
+
+      <ul id="sidebar" class="nav-container">
+        <div class="absolute opacity-10 z-[-1]"><img src="/assets/img/ckem logo.png" alt=""></div>
+        <li><a class="text-white" href="/">Home</a></li>
+        <li><a class="text-white active" href="/pages/about.html">About Us</a></li>
+        <li><a class="text-white" href="//pages/contact.html">Contact Us</a></li>
+        <li><a class="text-white" href="/">Donations</a></li>
+        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
+        <button class="pryBtn block lg:hidden w-full shadow transition">Watch Live</button>
+      </ul>
+
+
+      <button class="pryBtn w-[150px] shadow transition hidden lg:block">Watch Live</button>
+      <button id="toogleBtn" class="text-graz block lg:hidden"><i id="tooglerIcon" class="fa fa-bars"></i></button>
+    </nav>
+  </header>
+
+    <input type="text">
+    <!-- -----------------------------------------------------
+    HERO
+    ----------------------------------------------------- -->
+
+    <section style="background-image: url('/assets/img/worship.jpeg');" class="banner">
+        <!-- <div class="overlay"></div> -->
+        <h1>BLOG </h1>
+    </section>
+
+    <section class="content">
+        <div class="px-[4rem] flex gap-10" >
+            <div class="w-[9/12]">
+                <div>
+                    <img src="" class="w-full" alt="">
+
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, error! Ut deleniti quaerat consequuntur iusto.</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia enim similique vel veritatis fuga, nam iste blanditiis dolores eligendi quam. Veritatis repudiandae qui at reprehenderit iste fugit. Sapiente, cumque in nam adipisci saepe similique rerum ipsa totam impedit quas dolor minima mollitia animi ipsam quasi dignissimos voluptatum illo velit quam assumenda aliquid beatae? Est in adipisci facilis cum animi, a debitis sapiente, rerum cumque molestiae iste suscipit deleniti quam. Doloribus deleniti ut nam error accusantium possimus. Sed rerum facere inventore ipsa, recusandae eaque error repudiandae provident numquam autem ea doloribus voluptate mollitia ipsam magni consectetur dolorem commodi ipsum corrupti non?</p>
+
+                    <div>
+                        <!-- comments -->
+                    </div>
+
+                    <div class="bg-graz p-6">
+                        <!-- add comments -->
+
+                        <form action="">
+                            <div>
+                                <input placeholder="First Name" type="text">
+                                <input placeholder="Last Name" type="text">
+                            </div>
+                            
+                            <input placeholder="Enter Email" type="text">
+                            <Textarea class="Write comment ...">
+
+                            </Textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[3/12]">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white w-full  pt-[3rem] px-[4rem]">
+
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-6">
+          <img src="" alt="Logo">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.</p>
+
+          <div>
+
+          </div>
+
+        </div>
+        <div>
+          <h3 class="hd1 ">Quick Link</h3>
+        </div>
+        <div>
+          <h3 class="hd1 ">Contact Us</h3>
+        </div>
+        <div>
+          <h3 class="hd1 ">Recent Post</h3>
+        </div>        
+      </div>
+
+      <div class="border-t py-3 ">
+        <p class="text-center text-[#f4f4f4]">© 2024 CKEM INT'L. All Rights Reserved.</p>
+        
+      </div>
+
+
+  </footer>
+    
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
