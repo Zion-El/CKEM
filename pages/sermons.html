@@ -36,8 +36,8 @@
     <title>CKEM</title>
   </head>
   <body class="relative">
-    <header class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4]">
-      <nav class="flex container justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3  ">
+      <nav  class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -48,14 +48,15 @@
         </div>
 
         <ul id="sidebar" class="nav-container">
-          <div class="absolute opacity-10 z-[-1]">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
             <img src="/assets/img/ckem logo.png" alt="" />
           </div>
-          <li><a class="text-white active" href="/">Home</a></li>
+          <li><a class="text-white" href="/">Home</a></li>
           <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-          <li><a class="text-white" href="/">Contact Us</a></li>
+          <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
+          <li><a class="text-white active" href="/pages/sermons.html">Sermons</a></li>
           <li><a class="text-white" href="/">Donations</a></li>
-          <li><a class="text-white" href="/">Blog</a></li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
             Watch Live
           </button>

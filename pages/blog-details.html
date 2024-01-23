@@ -32,25 +32,38 @@
     <title>CKEM</title>
 </head>
 <body>
-  <header  class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4] bg-blac">
-    <nav class="flex container justify-between items-center w-full ">
+  <header id="nav" class="fixed z-[9999] w-full py-3  ">
+    <nav  class="flex px-[4rem] justify-between items-center w-full">
       <div>
-        <a href="/"><img class="h-[60px] w-[60px]" src="/assets/img/ckem logo.png" alt="Logo"></a>
+        <a href="/"
+          ><img
+            class="h-[60px] w-[60px]"
+            src="/assets/img/ckem logo.png"
+            alt="Logo"
+        /></a>
       </div>
 
       <ul id="sidebar" class="nav-container">
-        <div class="absolute opacity-10 z-[-1]"><img src="/assets/img/ckem logo.png" alt=""></div>
+        <div class="absolute opacity-10 z-[-1] block lg:hidden">
+          <img src="/assets/img/ckem logo.png" alt="" />
+        </div>
         <li><a class="text-white" href="/">Home</a></li>
-        <li><a class="text-white active" href="/pages/about.html">About Us</a></li>
-        <li><a class="text-white" href="//pages/contact.html">Contact Us</a></li>
+        <li><a class="text-white" href="/pages/about.html">About Us</a></li>
+        <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
+        <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
         <li><a class="text-white" href="/">Donations</a></li>
-        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
-        <button class="pryBtn block lg:hidden w-full shadow transition">Watch Live</button>
+        <li><a class="text-white active" href="/pages/blog.html">Blog</a></li>
+        <button class="pryBtn block lg:hidden w-full shadow transition">
+          Watch Live
+        </button>
       </ul>
 
-
-      <button class="pryBtn w-[150px] shadow transition hidden lg:block">Watch Live</button>
-      <button id="toogleBtn" class="text-graz block lg:hidden"><i id="tooglerIcon" class="fa fa-bars"></i></button>
+      <button class="pryBtn w-[150px] shadow transition hidden lg:block">
+        Watch Live
+      </button>
+      <button id="toogleBtn" class="text-graz block lg:hidden">
+        <i id="tooglerIcon" class="fa fa-bars"></i>
+      </button>
     </nav>
   </header>
 
