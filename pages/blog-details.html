@@ -66,24 +66,34 @@
       </button>
     </nav>
   </header>
-
-    <input type="text">
     <!-- -----------------------------------------------------
     HERO
     ----------------------------------------------------- -->
 
-    <section style="background-image: url('/assets/img/worship.jpeg');" class="banner">
-        <!-- <div class="overlay"></div> -->
-        <h1>BLOG </h1>
+    <section style="background-image: url('/assets/img/blog.avif');" class="banner relative">
+        <div class="overlay2"></div>
+        <h1>BLOG DETAILS</h1>
+        <p class="text-white"><span class="text-graz font-bold">Home</span> / Blog Details</p>
     </section>
 
     <section class="content">
-        <div class="px-[4rem] flex gap-10" >
-            <div class="w-[9/12]">
+        <div class="px-[4rem] flex gap-10 w-full" >
+            <div class="w-9/12">
                 <div>
-                    <img src="" class="w-full" alt="">
+                  <div class="flex gap-6">
+                    <div class="flex-2">
+                       <img src="/assets/img/sermon1.jpg" class="h-[500px] w-[500px]" alt="">
+                    </div>
+                    <div class="flex-1">
+                      <h1 class="font-bold ">Title: <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, error! Ut deleniti quaerat consequuntur iusto.</span></h1>
+                      <h1 class="font-bold ">Author: <span>Segun Ogungbe</span></h1>
+                      <h1 class="font-bold ">Date Posted: <span>10/10/2023</span></h1>
+                    </div>
+                   
 
-                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, error! Ut deleniti quaerat consequuntur iusto.</h1>
+                                        
+                  </div>
+
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia enim similique vel veritatis fuga, nam iste blanditiis dolores eligendi quam. Veritatis repudiandae qui at reprehenderit iste fugit. Sapiente, cumque in nam adipisci saepe similique rerum ipsa totam impedit quas dolor minima mollitia animi ipsam quasi dignissimos voluptatum illo velit quam assumenda aliquid beatae? Est in adipisci facilis cum animi, a debitis sapiente, rerum cumque molestiae iste suscipit deleniti quam. Doloribus deleniti ut nam error accusantium possimus. Sed rerum facere inventore ipsa, recusandae eaque error repudiandae provident numquam autem ea doloribus voluptate mollitia ipsam magni consectetur dolorem commodi ipsum corrupti non?</p>
 
@@ -108,44 +118,62 @@
                     </div>
                 </div>
             </div>
-            <div class="w-[3/12]">
-
+            <div class="w-3/12">
+              <div>dhdlhf</div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white w-full  pt-[3rem] px-[4rem]">
-
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div class="space-y-6">
-          <img src="" alt="Logo">
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.</p>
-
-          <div>
-
+    <footer
+      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
+    >
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+        <div class="space-y-4">
+          <div class="flex space-x-2 justify-start items-center">
+            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
           </div>
+         
 
+          <p class="text-graz text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+          </p>
+
+          <div></div>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Quick Link</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Sermons</a></li>
+            <li><a href="">Our Events</a></li>
+            <li><a href="">Donations</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Contact Us</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li><a href="">Phone: +2348123456788</a></li>
+            <li><a href="">Email: ckem@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+          </ul>
         </div>
         <div>
-          <h3 class="hd1 ">Quick Link</h3>
+          <h3 class="hd1">Recent Post</h3>
         </div>
-        <div>
-          <h3 class="hd1 ">Contact Us</h3>
-        </div>
-        <div>
-          <h3 class="hd1 ">Recent Post</h3>
-        </div>        
       </div>
 
-      <div class="border-t py-3 ">
-        <p class="text-center text-[#f4f4f4]">© 2024 CKEM INT'L. All Rights Reserved.</p>
-        
+      <div class="border-t py-3">
+        <p class="text-center text-sm text-[#f4f4f4]">
+          © 2024 CKEM INT'L. All Rights Reserved.
+        </p>
       </div>
-
-
-  </footer>
+    </footer>
     
-    <script src="/scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/testimony.js"></script>
 </body>
 </html>

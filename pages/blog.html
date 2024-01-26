@@ -47,7 +47,7 @@
         <div class="absolute opacity-10 z-[-1] block lg:hidden">
           <img src="/assets/img/ckem logo.png" alt="" />
         </div>
-        <li><a class="text-white active" href="/">Home</a></li>
+        <li><a class="text-white" href="/">Home</a></li>
         <li><a class="text-white" href="/pages/about.html">About Us</a></li>
         <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
         <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
@@ -66,15 +66,14 @@
       </button>
     </nav>
   </header>
-
-    <input type="text">
     <!-- -----------------------------------------------------
     HERO
     ----------------------------------------------------- -->
 
-    <section style="background-image: url('/assets/img/worship.jpeg');" class="banner">
-        <!-- <div class="overlay"></div> -->
+    <section style="background-image: url('/assets/img/blog.avif');" class="banner relative">
+        <div class="overlay2"></div>
         <h1>BLOGS AND ARTICLES</h1>
+        <p class="text-white"><span class="text-graz font-bold">Home</span> / Blog</p>
     </section>
 
     <section class="content">
@@ -96,7 +95,7 @@
                     <a class="absolute bottom-0 right-0" href="/pages/blog-details.html"><button class="py-3 px-6 bg-blac border border-white opacity-80 hover:opacity-100 ease-in-out transition-all duration-500">Read More</button></a>
                     <img
                       class="w-full h-full"
-                      src="/assets//img/sermon1.jpg"
+                      src="/assets/img/sermon1.jpg"
                       alt=""
                     />
                   </div>
@@ -186,38 +185,56 @@
             </div>
     </section>
 
-    <footer class="bg-black text-white w-full  pt-[3rem] px-[4rem]">
-
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div class="space-y-6">
-          <img src="" alt="Logo">
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.</p>
-
-          <div>
-
+    <footer
+      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
+    >
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+        <div class="space-y-4">
+          <div class="flex space-x-2 justify-start items-center">
+            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
           </div>
+         
 
+          <p class="text-graz text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+          </p>
+
+          <div></div>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Quick Link</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Sermons</a></li>
+            <li><a href="">Our Events</a></li>
+            <li><a href="">Donations</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Contact Us</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li><a href="">Phone: +2348123456788</a></li>
+            <li><a href="">Email: ckem@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+          </ul>
         </div>
         <div>
-          <h3 class="hd1 ">Quick Link</h3>
+          <h3 class="hd1">Recent Post</h3>
         </div>
-        <div>
-          <h3 class="hd1 ">Contact Us</h3>
-        </div>
-        <div>
-          <h3 class="hd1 ">Recent Post</h3>
-        </div>        
       </div>
 
-      <div class="border-t py-3 ">
-        <p class="text-center text-[#f4f4f4]">© 2024 CKEM INT'L. All Rights Reserved.</p>
-        
+      <div class="border-t py-3">
+        <p class="text-center text-sm text-[#f4f4f4]">
+          © 2024 CKEM INT'L. All Rights Reserved.
+        </p>
       </div>
-
-
-  </footer>
+    </footer>
     
-    <script src="/scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/testimony.js"></script>
 </body>
 </html>

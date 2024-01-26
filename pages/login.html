@@ -62,7 +62,19 @@
 
         </form>        
     </section>
-    <script src="/scripts/script.js"></script>
+    <script>
+        showBtn.addEventListener('click', function(){
+            if (showIcon.classList.contains('fa-eye')){
+                showIcon.classList.remove('fa-eye')
+                showIcon.classList.add('fa-eye-slash')
+                passwordInput.type = 'text'
+            }else{
+                showIcon.classList.add('fa-eye')
+                showIcon.classList.remove('fa-eye-slash')
+                passwordInput.type = 'password'
+            }
+        })
+    </script>
     <script>
         AOS.init();
       </script>

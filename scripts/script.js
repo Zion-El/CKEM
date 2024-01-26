@@ -1,3 +1,27 @@
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    speed: 1000,
+    spaceBetween: 100,
+  
+    direction: 'horizontal',
+    loop: true,
+  
+    autoplay: {
+        delay: 3000,
+      },
+
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  });
+
+
 // ---------------------------------------------------------
 // HANDLE NAVBAR
 // ---------------------------------------------------------
@@ -9,18 +33,18 @@ const navbar = document.getElementById('nav')
 const showBtn = document.getElementById('show')
 const showIcon = document.getElementById('icon')
 const passwordInput = document.getElementById('password')
-// show password
-showBtn.addEventListener('click', function(){
-    if (showIcon.classList.contains('fa-eye')){
-        showIcon.classList.remove('fa-eye')
-        showIcon.classList.add('fa-eye-slash')
-        passwordInput.type = 'text'
-    }else{
-        showIcon.classList.add('fa-eye')
-        showIcon.classList.remove('fa-eye-slash')
-        passwordInput.type = 'password'
+
+
+const ChangeBackground = () => {
+    if (window.scrollY >= 80) {
+      navbar.classList.add('header')
+    } else {
+        navbar.classList.remove('header')
     }
-})
+  };
+document.addEventListener('scroll', ChangeBackground)
+
+
 
 
 function handleToggle() {
@@ -38,13 +62,4 @@ function handleToggle() {
 
 toogler.addEventListener('click', handleToggle);
 
-const ChangeBackground = () => {
-    console.log('hello')
-    if (window.scrollY >= 80) {
-      navbar.classList.add('header')
-    } else {
-        navbar.classList.remove('header')
-    }
-  };
-document.addEventListener('scroll', ChangeBackground)
 

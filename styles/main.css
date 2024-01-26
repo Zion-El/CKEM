@@ -45,6 +45,15 @@
     left: 0;
     z-index: -1;
 }
+.overlay2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .pryBtn{
     color: #fff;
@@ -101,6 +110,8 @@
     height: 50vh;
     z-index: -1;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     background-position: center;
