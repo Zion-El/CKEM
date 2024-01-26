@@ -85,7 +85,7 @@
 .hero-btn:hover {
     border: 1px solid #bd302d;
     background: #bd302d;
-    transition: 1s ease-in-out;
+    transition: .3s ease-in-out;
     color: #fff;
 }
 
