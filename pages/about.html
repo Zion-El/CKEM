@@ -1,196 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/landing.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2cb29d167e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-    
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                scarlet: '#bd302d',
-                yellow: '#e2a822',
-                graz: '#d2d0b8',
-                ash: '#e6f1ef',
-                blac: '#2f2f2c',
-              },
-               FontFace:{
-                int: 'Inter, San'
-               }
-            }
-          }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              scarlet: "#bd302d",
+              yellow: "#e2a822",
+              graz: "#d2d0b8",
+              ash: "#e6f1ef",
+              blac: "#2f2f2c",
+            },
+            FontFace: {
+              int: "Inter, San",
+            },
+          },
+        },
+      };
     </script>
     <title>CKEM</title>
-</head>
-<body>
-  <header id="nav" class="fixed z-[9999] w-full py-3  ">
-    <nav  class="flex px-[4rem] justify-between items-center w-full">
-      <div>
-        <a href="/"
-          ><img
-            class="h-[60px] w-[60px]"
-            src="/assets/img/ckem logo.png"
-            alt="Logo"
-        /></a>
-      </div>
-
-      <ul id="sidebar" class="nav-container">
-        <div class="absolute opacity-10 z-[-1] block lg:hidden">
-          <img src="/assets/img/ckem logo.png" alt="" />
+  </head>
+  <body>
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
+        <div>
+          <a href="/"
+            ><img
+              class="h-[60px] w-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+          /></a>
         </div>
-        <li><a class="text-white" href="/">Home</a></li>
-        <li><a class="text-white active" href="/pages/about.html">About Us</a></li>
-        <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
-        <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
-        <li><a class="text-white" href="/">Donations</a></li>
-        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
-        <a href="">
-          <button class="pryBtn block lg:hidden w-full shadow transition">
-            Watch Live
-          </button>          
-        </a>
 
-      </ul>
+        <ul id="sidebar" class="nav-container">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
+            <img src="/assets/img/ckem logo.png" alt="" />
+          </div>
+          <li><a class="text-white" href="/">Home</a></li>
+          <li>
+            <a class="text-white active" href="/pages/about.html">About Us</a>
+          </li>
+          <li>
+            <a class="text-white" href="/pages/contact.html">Contact Us</a>
+          </li>
+          <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
+          <li><a class="text-white" href="/">Donations</a></li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
+          <a href="">
+            <button class="pryBtn block lg:hidden w-full shadow transition">
+              Watch Live
+            </button>
+          </a>
+        </ul>
 
-      <button class="pryBtn w-[150px] shadow transition hidden lg:block">
-        Watch Live
-      </button>
-      <button id="toogleBtn" class="text-graz block lg:hidden">
-        <i id="tooglerIcon" class="fa fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-
+        <button class="pryBtn w-[150px] shadow transition hidden lg:block">
+          Watch Live
+        </button>
+        <button id="toogleBtn" class="text-graz block lg:hidden">
+          <i id="tooglerIcon" class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
     <!-- -----------------------------------------------------
     HERO
     ----------------------------------------------------- -->
 
-    <section style="background-image: url('/assets/img/prayer.avif');" class="banner relative">
-        <div class="overlay2"></div>
-        <h1>ABOUT US</h1>
-        <p class="text-white"><span class="text-graz font-bold">Home</span> / About Us</p>
+    <section
+      style="background-image: url('/assets/img/prayer.avif')"
+      class="banner relative"
+    >
+      <div class="overlay2"></div>
+      <h1>ABOUT US</h1>
+      <p class="text-white">
+        <span class="text-graz font-bold">Home</span> / About Us
+      </p>
     </section>
 
     <section class="content">
-        <div class="px-[2rem] md:px-[4rem] ">
-            <div class="flex flex-col lg:flex-row gap-8">
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-
-                </div>
-                <div class="flex-1 flex flex-col lg:flex-col">
-                    <div class="flex-1 w-1/2 relative">
-
-                      <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/church2.jpg');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Sunday Service
-                              </h1>
-                              <p>Every Sundays</p>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/bible\ study.avif');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Bible Study
-                              </h1>
-                              <p>Every Thursday</p>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/church2.jpg');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Sunday Service
-                              </h1>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          ...
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                      
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
-                      </div>
-
-
-
-                    </div>
-                    <div class="flex-1">
-                        <div style="background-image: url('/assets/img/church1.jpg');" class="h-full w-full flex justify-center items-center py-12">
-                            <button class="w-[40%] py-[6px] hover:bg-scarlet  transition ease-in-out duration-500 hover:text-graz border-none bg-yellow">View Events</button>
-
-                            
-                        </div>
-                    </div>
-
-                </div>                
+      <div class="px-[2rem] md:px-[4rem]">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
+            >
+              <h3 class="text-center text-[20px] font-[600]">Our Vision</h3>
+              <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
+              <p class="text-center opacity-[0.7] text-sm">
+                To raise an Army for the expansion of the kingdom of God.
+                Hebrews 11:33-34
+              </p>
             </div>
+            <div
+              class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
+            >
+              <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
+              <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
+              <p class="text-center opacity-[0.7] text-sm">
+                To convert seekers/sinners to saints,saints to members, members
+                to workers, workers to ministers and ministers to soldiers of
+                Christ.
+              </p>
+            </div>
+            <div
+              class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
+            >
+              <h3 class="text-center text-[20px] font-[600]">
+                What we believe
+              </h3>
+              <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
+              <p class="text-center opacity-[0.7] text-sm">
+                1. We believe in The Word of God. 2Timothy 3:16<br />
+                2. We believe in the absolue trinity of The Eternal God. 1 John
+                5:7-8<br />
+                3. We believe in the personality of The Holy Spirit. Acts 5:4
+                <br />
+                <!-- 4. We believe that salvation is by Grace through Faith and not
+                of works.<br /> -->
+                <!-- 5. We believe in the victorious life over sin. -->
+              </p>
+            </div>
+            <div
+              class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
+            >
+              <h3 class="text-center text-[20px] font-[600]">
+                What we believe
+              </h3>
+              <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
+              <p class="text-center opacity-[0.7] text-sm">
+                4. We believe in Christian perfection and holiness through
+                absolute confession and consecration. <br />
+                5. We believe in the second coming of Jesus Christ. <br />
+                <!-- 8. We believe in Divine Healing. <br /> -->
+                <!-- 9. We believe in Tithing. <br /> -->
+                6. We believe in one man and one wife.
+              </p>
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col lg:flex-col">
+            <div class="flex-1 w-1/2 relative">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div
+                      style="background-image: url('/assets/img/church2.jpg')"
+                      class="h-full w-full flex justify-center items-center flex-col gap-4 py-6"
+                    >
+                      <h1 class="font-[600] text-[32px] text-white">
+                        Sunday Service
+                      </h1>
+                      <p>Every Sunday</p>
+                      <p>8am - 11:30am</p>
+                      <div
+                        class="w-full flex justify-center items-center gap-6"
+                      >
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Locate a Church
+                        </button>
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Join us Online
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      style="background-image: url('/assets/img/church2.jpg')"
+                      class="h-full w-full flex justify-center items-center flex-col gap-4 py-6"
+                    >
+                      <h1 class="font-[600] text-[32px] text-white">
+                        Healing/Deliverance Service
+                      </h1>
+                      <p>Every Tuesday</p>
+                      <p>5:30pm - 7:30pm</p>
+                      <div
+                        class="w-full flex justify-center items-center gap-6"
+                      >
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Locate a Church
+                        </button>
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Join us Online
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      style="
+                        background-image: url('/assets/img/bible\ study.avif');
+                      "
+                      class="h-full w-full flex justify-center items-center flex-col gap-4 py-6"
+                    >
+                      <h1 class="font-[600] text-[32px] text-white">
+                        Bible Study
+                      </h1>
+                      <p>Every Thursday</p>
+                      <p>5:30pm - 7:00pm</p>
+                      <div
+                        class="w-full flex justify-center items-center gap-6"
+                      >
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Locate a Church
+                        </button>
+                        <button
+                          class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none"
+                        >
+                          Join us Online
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div
+                style="background-image: url('/assets/img/church1.jpg')"
+                class="h-full w-full flex justify-center items-center py-12"
+              >
+                <button
+                  class="w-[40%] py-[6px] hover:bg-scarlet transition ease-in-out duration-500 hover:text-graz border-none bg-yellow"
+                >
+                  View Events
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="content">
@@ -206,21 +285,38 @@
 
         <div class="space-y-6">
           <div class="space-y-2">
-           <h1 class="font-bold">How We Started</h1>
+            <h1 class="font-bold">How We Started</h1>
 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias est deserunt ex aliquid autem reiciendis vel corrupti nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis! Repellendus illum nulla quo recusandae? Esse similique facilis minus voluptatum totam. Earum, molestiae.</p>            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              alias est deserunt ex aliquid autem reiciendis vel corrupti
+              nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis!
+              Repellendus illum nulla quo recusandae? Esse similique facilis
+              minus voluptatum totam. Earum, molestiae.
+            </p>
           </div>
           <div class="space-y-2">
-           <h1 class="font-bold">Where we are now</h1>
+            <h1 class="font-bold">Where we are now</h1>
 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias est deserunt ex aliquid autem reiciendis vel corrupti nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis! Repellendus illum nulla quo recusandae? Esse similique facilis minus voluptatum totam. Earum, molestiae.</p>            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              alias est deserunt ex aliquid autem reiciendis vel corrupti
+              nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis!
+              Repellendus illum nulla quo recusandae? Esse similique facilis
+              minus voluptatum totam. Earum, molestiae.
+            </p>
           </div>
           <div class="space-y-2">
-           <h1 class="font-bold">Where we want to be</h1>
+            <h1 class="font-bold">Where we want to be</h1>
 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias est deserunt ex aliquid autem reiciendis vel corrupti nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis! Repellendus illum nulla quo recusandae? Esse similique facilis minus voluptatum totam. Earum, molestiae.</p>            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              alias est deserunt ex aliquid autem reiciendis vel corrupti
+              nesciunt nisi. Nisi impedit non nam! Deserunt, quidem debitis!
+              Repellendus illum nulla quo recusandae? Esse similique facilis
+              minus voluptatum totam. Earum, molestiae.
+            </p>
           </div>
-
         </div>
       </div>
     </section>
@@ -398,24 +494,22 @@
     </section>
 
     <section class="content">
-      <div class="container">
-
-      </div>
+      <div class="container"></div>
     </section>
 
-    
-
-
-    <footer
-      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
-    >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+    <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
+      <div
+        class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]"
+      >
         <div class="space-y-4">
           <div class="flex space-x-2 justify-start items-center">
-            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
-            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+            <img
+              class="w-[60px] h-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+            />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1>
           </div>
-         
 
           <p class="text-graz text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -436,10 +530,19 @@
         <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
           <ul class="text-graz text-sm space-y-2">
-            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li>
+              Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </li>
             <li><a href="">Phone: +2348123456788</a></li>
             <li><a href="">Email: ckem@gmail.com</a></li>
-            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+            <li class="bg-white w-full px-2 py-1">
+              <input
+                class="bg-transparent outline-none text-blac"
+                type="text"
+                placeholder="Subscribe for News Letters"
+              />
+              <button class="h-full pryBtn px-3">Subscribe</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -453,8 +556,8 @@
         </p>
       </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/scripts/script.js"></script>
-  <script src="/scripts/testimony.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/testimony.js"></script>
+  </body>
 </html>
