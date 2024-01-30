@@ -44,10 +44,8 @@
     <title>Contact Us</title>
   </head>
   <body>
-    <header
-      class="fixed z-[9999] w-full py-3 shadow border-b border-[#f4f4f4] bg-blac"
-    >
-      <nav class="flex container justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3  ">
+      <nav  class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -58,16 +56,15 @@
         </div>
 
         <ul id="sidebar" class="nav-container">
-          <div class="absolute opacity-10 z-[-1]">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
             <img src="/assets/img/ckem logo.png" alt="" />
           </div>
           <li><a class="text-white" href="/">Home</a></li>
-          <li>
-            <a class="text-white active" href="/pages/about.html">About Us</a>
-          </li>
-          <li><a class="text-white" href="/">Contact Us</a></li>
+          <li><a class="text-white" href="/pages/about.html">About Us</a></li>
+          <li><a class="text-white active" href="/pages/contact.html">Contact Us</a></li>
+          <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
           <li><a class="text-white" href="/">Donations</a></li>
-          <li><a class="text-white" href="/">Blog</a></li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
             Watch Live
           </button>
@@ -82,17 +79,25 @@
       </nav>
     </header>
 
-    <input type="text" />
 
     <section
-      style="background-image: url('/assets/img/worship.jpeg')"
-      class="banner"
+      style="background-image: url('/assets/img/sermon.avif')"
+      class="banner relative"
     >
-      <!-- <div class="overlay"></div> -->
+      <div class="overlay2"></div>
       <h1>CONTACT US</h1>
+      <p class="text-white"><span class="text-graz font-bold">Home</span> / Contact Us</p>
     </section>
 
     <section class="location">
+      <div>
+        <h3 class="header-title">Locate Us via Google Map</h3>
+        <div class="marker">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+      </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.752065526282!2d3.2093743741161!3d6.677608821355091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b99eeb1eca285%3A0xefdb0c28bc0ca484!2sCKEM%20INTERNATIONAL!5e0!3m2!1sen!2sng!4v1704633384151!5m2!1sen!2sng"
         width="600"
@@ -104,8 +109,18 @@
       ></iframe>
     </section>
 
+    
+        <div>
+          <h3 class="header-title">We'll Like to Hear From You</h3>
+          <div class="marker">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+        </div>
     <section class="contact us">
-      <div class="row">
+      <div class="row px-[2rem] md:px-[4rem]">
+
         <div class="contact-col">
           <div>
             <i class="fa fa-home"></i>
@@ -162,24 +177,40 @@
     </section>
 
     <footer
-      class="container bg-black text-white w-full lg:w-[1560px] pt-[3rem]"
+      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
     >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div class="space-y-6">
-          <img src="" alt="Logo" />
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+        <div class="space-y-4">
+          <div class="flex space-x-2 justify-start items-center">
+            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+          </div>
+         
 
-          <p>
+          <p class="text-graz text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
           </p>
 
           <div></div>
         </div>
-        <div>
+        <div class="space-y-4">
           <h3 class="hd1">Quick Link</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Sermons</a></li>
+            <li><a href="">Our Events</a></li>
+            <li><a href="">Donations</a></li>
+          </ul>
         </div>
-        <div>
+        <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li><a href="">Phone: +2348123456788</a></li>
+            <li><a href="">Email: ckem@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+          </ul>
         </div>
         <div>
           <h3 class="hd1">Recent Post</h3>
@@ -187,11 +218,11 @@
       </div>
 
       <div class="border-t py-3">
-        <p class="text-center text-[#f4f4f4]">
+        <p class="text-center text-sm text-[#f4f4f4]">
           © 2024 CKEM INT'L. All Rights Reserved.
         </p>
       </div>
-
+    </footer>     
       <script>
         ((g) => {
           var h,
@@ -228,9 +259,9 @@
             ? console.warn(p + " only loads once. Ignoring:", g)
             : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
         })({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
-      </script>
-
-      <script src="scripts/script.js"></script>
-    </footer>
+      </script>    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/scripts/script.js"></script>
+      <script src="/scripts/testimony.js"></script>
   </body>
 </html>

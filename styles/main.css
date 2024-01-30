@@ -22,6 +22,14 @@
 .container{
     padding: 0 5rem;
 }
+.glass{
+    background: linear-gradient(125deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.37);
+}
 
 .hd1{
     font-weight: 600;
@@ -32,6 +40,25 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.overlay3{
+    width: 100%;
+    height: 100%;
+    background-color: #bd302d;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.overlay2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -93,6 +120,8 @@
     height: 50vh;
     z-index: -1;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     background-position: center;
@@ -108,6 +137,11 @@
     font-family: var(--pt);
 }
 
+@media screen and (max-width: 768px) {
+    .banner{
+        height: 30vh;
+    }
+}
 @media screen and (max-width: 425px) {
     .container{
         padding: 0 1rem;
@@ -116,3 +150,6 @@
         height: 40vh;
     }
 }
+
+
+/* ----------------- blog -------------------- */
