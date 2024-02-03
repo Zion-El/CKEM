@@ -36,8 +36,8 @@
     <title>CKEM</title>
   </head>
   <body class="relative">
-    <header id="nav" class="fixed z-[9999] w-full py-3  ">
-      <nav  class="flex px-[4rem] justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -53,8 +53,12 @@
           </div>
           <li><a class="text-white" href="/">Home</a></li>
           <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-          <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
-          <li><a class="text-white active" href="/pages/sermons.html">Sermons</a></li>
+          <li>
+            <a class="text-white" href="/pages/contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a class="text-white active" href="/pages/sermons.html">Sermons</a>
+          </li>
           <li><a class="text-white" href="/">Donations</a></li>
           <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
@@ -71,16 +75,16 @@
       </nav>
     </header>
 
-
-
     <section
-    style="background-image: url('/assets/img/serm.jpg')"
-    class="banner relative"
-  >
-    <div class="overlay2"></div>
-    <h1>SERMON</h1>
-    <p class="text-white"><span class="text-graz font-bold">Home</span> / Sermon</p>
-  </section>
+      style="background-image: url('/assets/img/serm.jpg')"
+      class="banner relative"
+    >
+      <div class="overlay2"></div>
+      <h1>SERMON</h1>
+      <p class="text-white">
+        <span class="text-graz font-bold">Home</span> / Sermon
+      </p>
+    </section>
 
     <!-------------------------------------------------------
     SERMONS
@@ -229,20 +233,23 @@
       </div>
     </section>
 
-    <footer
-      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
-    >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+    <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
+      <div
+        class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]"
+      >
         <div class="space-y-4">
           <div class="flex space-x-2 justify-start items-center">
-            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
-            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+            <img
+              class="w-[60px] h-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+            />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1>
           </div>
-         
 
           <p class="text-graz text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+            ...raising an Army for the Expansion of God's Kingdom. Hebrews
+            11:33-34
           </p>
 
           <div></div>
@@ -259,10 +266,21 @@
         <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
           <ul class="text-graz text-sm space-y-2">
-            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li><a href="">Phone: +2348123456788</a></li>
-            <li><a href="">Email: ckem@gmail.com</a></li>
-            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+            <li>
+              Address: 5&6 Daniel Asuku Str, <br />Progress Estate, Off Obasanjo
+              road, <br />Ota, <br />
+              Ogun State.
+            </li>
+            <li><a href="">Phone: +2349138503592</a></li>
+            <li><a href="">Email: ckeminternational@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1">
+              <input
+                class="bg-transparent outline-none text-blac"
+                type="text"
+                placeholder="Subscribe for News Letters"
+              />
+              <button class="h-full pryBtn px-3">Subscribe</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -276,8 +294,8 @@
         </p>
       </div>
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="/scripts/script.js"></script>
-      <script src="/scripts/testimony.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/testimony.js"></script>
   </body>
 </html>
