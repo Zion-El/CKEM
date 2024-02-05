@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/landing.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                scarlet: '#bd302d',
+                yellow: '#e2a822',
+                graz: '#d2d0b8',
+                ash: '#e6f1ef',
+                blac: '#2f2f2c',
+              },
+               FontFace:{
+                int: 'Inter, San'
+               }
+            }
+          }
+        }
+    </script>
+    <title>CKEM</title>
+</head>
+<body>
+  <header id="nav" class="fixed z-[9999] w-full py-3  ">
+    <nav  class="flex px-[4rem] justify-between items-center w-full">
+      <div>
+        <a href="/"
+          ><img
+            class="h-[60px] w-[60px]"
+            src="/assets/img/ckem logo.png"
+            alt="Logo"
+        /></a>
+      </div>
+
+      <ul id="sidebar" class="nav-container">
+        <div class="absolute opacity-10 z-[-1] block lg:hidden">
+          <img src="/assets/img/ckem logo.png" alt="" />
+        </div>
+        <li><a class="text-white" href="/">Home</a></li>
+        <li><a class="text-white" href="/pages/about.html">About Us</a></li>
+        <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
+        <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
+        <li><a class="text-white active" href="/pages/events.html">Events</a></li>
+        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
+        <button class="pryBtn block lg:hidden w-full shadow transition">
+          Watch Live
+        </button>
+      </ul>
+
+      <button class="pryBtn w-[150px] shadow transition hidden lg:block">
+        Watch Live
+      </button>
+      <button id="toogleBtn" class="text-graz block lg:hidden">
+        <i id="tooglerIcon" class="fa fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+    <!-- -----------------------------------------------------
+    HERO
+    ----------------------------------------------------- -->
+
+    <section style="background-image: url('/assets/img/blog.avif');" class="banner relative">
+        <div class="overlay2"></div>
+        <h1>EVENT DETAILS</h1>
+        <p class="text-white"><span class="text-graz font-bold">Home</span> / Event Details</p>
+    </section>
+
+    <section class="content">
+        <div class="px-[2rem] md:px-[4rem] flex flex-col lg:flex-row gap-10 w-full" >
+            <div class="w-full lg:w-8/12">
+                <div class="space-y-6">
+                  <div class="flex flex-col gap-6">
+                    <div class="">
+                       <img src="/assets/img/sermon1.jpg" class="h-[300px] md:h-[400px] w-full" alt="">
+                    </div>
+                    <div class=" space-y-4">
+                      <!-- <h1 class="font-bold ">Title: <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, error! Ut deleniti quaerat consequuntur iusto.</span></h1> -->
+                      <h1 class="font-bold ">Venue: <span>Church Auditorium</span></h1>
+                      <h1 class="font-bold ">Date: <span>10/10/2023</span></h1>
+                    </div>                                
+                  </div>
+
+
+                    <p><span class="font-bold">Details: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia enim similique vel veritatis fuga, nam iste blanditiis dolores eligendi quam. Veritatis repudiandae qui at reprehenderit iste fugit. Sapiente, cumque in nam adipisci saepe similique rerum ipsa totam impedit quas dolor minima mollitia animi ipsam quasi dignissimos voluptatum illo velit quam assumenda aliquid beatae? Est in adipisci facilis cum animi, a debitis sapiente, rerum cumque molestiae iste suscipit deleniti quam. Doloribus deleniti ut nam error accusantium possimus. Sed rerum facere inventore ipsa, recusandae eaque error repudiandae provident numquam autem ea doloribus voluptate mollitia ipsam magni consectetur dolorem commodi ipsum corrupti non?</p>
+
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 h-full ">
+              <div class="bg-ash p-6 space-y-6">
+                <!-- add comments -->
+                <h6 class="font-bold text-scarlet text-2xl ">Register to Attend!</h6>
+                <form class="space-y-6">
+                    <div>
+                        <p class="text-blac text-sm font-bold">Full Name</p>
+                        <input class="w-full border-scarlet rounded-lg shadow-lg p-2" placeholder="Enter Full Name" type="text">
+                    </div>
+                    <div>
+                        <p class="text-blac text-sm font-bold">Email</p>
+                        <input class="w-full border-scarlet rounded-lg shadow-lg p-2" placeholder="Enter Full Email" type="text">
+                    </div>
+                    <div>
+                        <p class="text-blac text-sm font-bold">Phone Number</p>
+                        <input class="w-full border-scarlet rounded-lg shadow-lg p-2" placeholder="Enter Phone" type="phone">
+                    </div>
+                    <div>
+                        <p class="text-blac text-sm font-bold">Home Address</p>
+                        <input class="w-full border-scarlet rounded-lg shadow-lg p-2" placeholder="Enter Full Address" type="text">
+                    </div>
+
+                    <button type="submit" class="w-full rounded-lg shadow-lg bg-scarlet text-white transition-all ease-in-out duration-500 hover:bg-blac p-3">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="salvation">
+      <div class="flex justify-center items-center  h-[40vh] w-full">
+        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center">
+          <div>
+            <h1 class="text-4xl w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
+          </div>
+          <div>
+            <button class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border ">Become a Christian</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center relative h-[20vh] w-full">
+        <div class="overlay3"></div>
+        <div class="px-[2rem] lg:px-[4rem] flex justify-between items-center w-full">
+          <div>
+            <h1 class="text-2xl text-white leading-[50px]">We'll like to guide you <span class="font-[500]">towards the right direction</span></h1>
+          </div>
+          <div>
+            <button class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet ">Book for Counselling</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer
+      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
+    >
+      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+        <div class="space-y-4">
+          <div class="flex space-x-2 justify-start items-center">
+            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+          </div>
+         
+
+          <p class="text-graz text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+          </p>
+
+          <div></div>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Quick Link</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Sermons</a></li>
+            <li><a href="">Our Events</a></li>
+            <li><a href="">Donations</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="hd1">Contact Us</h3>
+          <ul class="text-graz text-sm space-y-2">
+            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            <li><a href="">Phone: +2348123456788</a></li>
+            <li><a href="">Email: ckem@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="hd1">Recent Post</h3>
+        </div>
+      </div>
+
+      <div class="border-t py-3">
+        <p class="text-center text-sm text-[#f4f4f4]">
+          © 2024 CKEM INT'L. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/testimony.js"></script>
+</body>
+</html>

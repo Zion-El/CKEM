@@ -53,7 +53,7 @@
         <li><a class="text-white" href="/pages/about.html">About Us</a></li>
         <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
         <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
-        <li><a class="text-white" href="/">Donations</a></li>
+        <li><a class="text-white " href="/pages/events.html">Events</a></li>
         <li><a class="text-white active" href="/pages/blog.html">Blog</a></li>
         <button class="pryBtn block lg:hidden w-full shadow transition">
           Watch Live
@@ -79,14 +79,14 @@
     </section>
 
     <section class="content">
-        <div class="px-[4rem] flex gap-10 w-full" >
-            <div class="w-8/12">
+        <div class="px-[2rem] md:px-[4rem] flex flex-col lg:flex-row gap-10 w-full" >
+            <div class="w-full lg:w-8/12">
                 <div class="space-y-6">
-                  <div class="flex gap-6">
-                    <div class="flex-2">
-                       <img src="/assets/img/sermon1.jpg" class="h-[400px] w-[500px]" alt="">
+                  <div class="flex flex-col gap-6">
+                    <div class="">
+                       <img src="/assets/img/sermon1.jpg" class="h-[300px] md:h-[400px] w-full" alt="">
                     </div>
-                    <div class="flex-1 space-y-4">
+                    <div class=" space-y-4">
                       <h1 class="font-bold ">Title: <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, error! Ut deleniti quaerat consequuntur iusto.</span></h1>
                       <h1 class="font-bold ">Author: <span>Segun Ogungbe</span></h1>
                       <h1 class="font-bold ">Date Posted: <span>10/10/2023</span></h1>
@@ -99,8 +99,52 @@
 
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia enim similique vel veritatis fuga, nam iste blanditiis dolores eligendi quam. Veritatis repudiandae qui at reprehenderit iste fugit. Sapiente, cumque in nam adipisci saepe similique rerum ipsa totam impedit quas dolor minima mollitia animi ipsam quasi dignissimos voluptatum illo velit quam assumenda aliquid beatae? Est in adipisci facilis cum animi, a debitis sapiente, rerum cumque molestiae iste suscipit deleniti quam. Doloribus deleniti ut nam error accusantium possimus. Sed rerum facere inventore ipsa, recusandae eaque error repudiandae provident numquam autem ea doloribus voluptate mollitia ipsam magni consectetur dolorem commodi ipsum corrupti non?</p>
 
-                    <div>
+                    <div class="border-t border-b bg-ash p-6">
                         <!-- comments -->
+                        <div class="w-full bg-ash pb-6">
+                          <p class="font-bold text-scarlet">Comments</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                          <div class="comment">
+                            <div class="flex items-center gap-4">
+                              <img class="h-[40px] w-[40px] rounded-full" src="/assets/img/p2.jpg" alt="commentor">
+                              <div>
+                                <p class="text-sm font-[500]">Kunle Kunle</p>
+                                <small class="italic opacity-70">Commented on: 10-10-2023</small>
+                              </div>
+                              
+                            </div>
+                            <div class="pl-[2rem]">
+                              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima est quae animi nemo quidem eum exercitationem veritatis non, eveniet voluptatem provident quisquam adipisci fugiat odit a quo doloremque dolores ut?</p>
+
+                              <div class="space-x-4">
+                                <button><i class="fa-regular fa-thumbs-up"></i></button>
+                                <button><i class="fa-regular fa-thumbs-down"></i></button>
+                              </div>
+                            </div>
+                            
+                          </div>                          
+                          <div class="comment">
+                            <div class="flex items-center gap-4">
+                              <img class="h-[40px] w-[40px] rounded-full" src="/assets/img/p2.jpg" alt="commentor">
+                              <div>
+                                <p class="text-sm font-[500]">Kunle Kunle</p>
+                                <small class="italic opacity-70">Commented on: 10-10-2023</small>
+                              </div>
+                              
+                            </div>
+                            <div class="pl-[2rem]">
+                              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima est quae animi nemo quidem eum exercitationem veritatis non, eveniet voluptatem provident quisquam adipisci fugiat odit a quo doloremque dolores ut?</p>
+                              <div class="space-x-4">
+                                <button><i class="fa-regular fa-thumbs-up"></i></button>
+                                <button><i class="fa-regular fa-thumbs-down"></i></button>
+                              </div>
+                            </div>
+                            
+                          </div>                          
+                        </div>
+
                     </div>
 
                     <div class="bg-graz p-6">
@@ -122,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-4/12 px-4 border-l ">
+            <div class="w-full lg:w-4/12 lg:px-4 lg:border-l ">
               <div class="bg-graz p-6 space-y-3">
                 <!-- add comments -->
                 <h6 class="font-bold text-scarlet text-2xl ">Recent Blogs and Articles</h6>
@@ -167,9 +211,9 @@
 
     <section id="salvation">
       <div class="flex justify-center items-center  h-[40vh] w-full">
-        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center">
+        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row">
           <div>
-            <h1 class="text-4xl w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
+            <h1 class="text-4xl md:w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
           </div>
           <div>
             <button class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border ">Become a Christian</button>
@@ -178,7 +222,7 @@
       </div>
       <div class="flex justify-center items-center relative h-[20vh] w-full">
         <div class="overlay3"></div>
-        <div class="px-[2rem] lg:px-[4rem] flex justify-between items-center w-full">
+        <div class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row">
           <div>
             <h1 class="text-2xl text-white leading-[50px]">We'll like to guide you <span class="font-[500]">towards the right direction</span></h1>
           </div>
