@@ -6,6 +6,9 @@
     gap: 25px;
     
 }
+.banner h1{
+    text-align: center;
+}
 .swiper {
     width: 600px;
     height: 300px;
@@ -385,4 +388,20 @@
 } 
 .special-event-card:hover .special-event-overlay h1, .special-event-card:hover .special-event-overlay p,.special-event-card:hover .special-event-overlay a,.special-event-card:hover .special-event-overlay button{
     display: block;
+}
+
+
+.donate-card{
+    width: 100%;
+    height: 350px;
+}
+
+.donate-img{
+    height: 45%;
+    position: relative;
+}
+.donate-img button{
+    /* border-top-left-radius: 20px ; */
+    color: #fff;
+    font-weight: 600;
 }
