@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,41 +40,49 @@
     <title>CKEM</title>
   </head>
   <body>
-    <header id="nav" class="fixed z-[9999] w-full py-3  ">
-    <nav  class="flex px-[4rem] justify-between items-center w-full">
-      <div>
-        <a href="/"
-          ><img
-            class="h-[60px] w-[60px]"
-            src="/assets/img/ckem logo.png"
-            alt="Logo"
-        /></a>
-      </div>
-
-      <ul id="sidebar" class="nav-container">
-        <div class="absolute opacity-10 z-[-1] block lg:hidden">
-          <img src="/assets/img/ckem logo.png" alt="" />
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
+        <div>
+          <a href="/"
+            ><img
+              class="h-[60px] w-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+          /></a>
         </div>
-        <li><a class="text-white" href="/">Home</a></li>
-        <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-        <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
-        <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
-        <li><a class="text-white " href="/pages/events.html">Events</a></li>
-        <li><a class="text-white active" href="/pages/donation.html">Donations</a></li>
-        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
-        <button class="pryBtn block lg:hidden w-full shadow transition">
+
+        <ul id="sidebar" class="nav-container">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
+            <img src="/assets/img/ckem logo.png" alt="" />
+          </div>
+          <li><a class="text-white" href="/">Home</a></li>
+          <li>
+            <a class="text-white active" href="/pages/about.html">About Us</a>
+          </li>
+          <li>
+            <a class="text-white" href="/pages/contact.html">Contact Us</a>
+          </li>
+          <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
+          <li><a class="text-white" href="/pages/events.html">Events</a></li>
+          <li>
+            <a class="text-white" href="/pages/donation.html">Donations</a>
+          </li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
+          <a href="">
+            <button class="pryBtn block lg:hidden w-full shadow transition">
+              Watch Live
+            </button>
+          </a>
+        </ul>
+
+        <button class="pryBtn w-[150px] shadow transition hidden lg:block">
           Watch Live
         </button>
-      </ul>
-
-      <button class="pryBtn w-[150px] shadow transition hidden lg:block">
-        Watch Live
-      </button>
-      <button id="toogleBtn" class="text-graz block lg:hidden">
-        <i id="tooglerIcon" class="fa fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+        <button id="toogleBtn" class="text-graz block lg:hidden">
+          <i id="tooglerIcon" class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
     <!-- -----------------------------------------------------
     HERO
@@ -92,111 +100,18 @@
     </section>
 
     <section class="content">
-
-
-        <div class="px-[2rem] md:px-[4rem] ">
-            <div class="flex flex-col lg:flex-row gap-8">
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">To raise an Army for the expansion of the kingdom of God.
-                Hebrews 11:33-34</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-                    <div class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex  flex-col space-y-4 justify-center items-center">
-                        <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
-                        <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
-                        <p class="text-center opacity-[0.7] text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A delectus minima eaque incidunt accusantium laborum ipsam adipisci provident doloremque voluptatum.</p>
-                    </div>
-
-                </div>
-                <div class="flex-1 flex flex-col lg:flex-col">
-                    <div class="flex-1 w-full lg:w-1/2 relative">
-
-                      <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/church2.jpg');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Sunday Service
-                              </h1>
-                              <p>Every Sundays</p>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/bible\ study.avif');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Bible Study
-                              </h1>
-                              <p>Every Thursday</p>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div style="background-image: url('/assets/img/church2.jpg');" class="h-full w-full flex justify-center items-center flex-col gap-4 py-6">
-                              <h1 class="font-[600] text-[32px] text-white">
-                                  Sunday Service
-                              </h1>
-                              <p>9am - 12pm</p>
-                              <div class=" w-full flex justify-center items-center gap-6">
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Locate a Church</button>
-                                  <button class="bg-blac text-white font-[500] text-sm md:text-lg w-[40%] py-[6px] hover:bg-scarlet border transition ease-in-out duration-500 hover:text-graz hover:border-none">Join us Online</button>
-  
-                                  
-                              </div>                        
-                            </div>
-                          </div>
-                          ...
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                      
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
-                      </div>
-
-
-
-                    </div>
-                    <div class="flex-1">
-                        <div style="background-image: url('/assets/img/church1.jpg');" class="h-full w-full flex justify-center items-center py-12">
-                            <button class="w-[40%] py-[6px] hover:bg-scarlet  transition ease-in-out duration-500 hover:text-graz border-none bg-yellow">View Events</button>
-
-                            
-                        </div>
-                    </div>
-
-                </div>                
-
+      <div class="px-[2rem] md:px-[4rem]">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
+            >
+              <h3 class="text-center text-[20px] font-[600]">Our Vision</h3>
+              <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
+              <p class="text-center opacity-[0.7] text-sm">
+                To raise an Army for the Expansion of God's Kingdom. <br />
+                Hebrews 11:33-34
+              </p>
             </div>
             <div
               class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
@@ -204,48 +119,38 @@
               <h3 class="text-center text-[20px] font-[600]">Our Mission</h3>
               <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
               <p class="text-center opacity-[0.7] text-sm">
-                To convert seekers/sinners to saints,saints to members, members
-                to workers, workers to ministers and ministers to soldiers of
-                Christ.
+                To convert sinner/seeker to Saint, Saint to Member, Member to
+                Worker, Worker to Minister and Minister to Soldier.
               </p>
             </div>
             <div
               class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
             >
-              <h3 class="text-center text-[20px] font-[600]">
-                What we believe
-              </h3>
+              <h3 class="text-center text-[20px] font-[600]">Our Tenets</h3>
               <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
               <p class="text-center opacity-[0.7] text-sm">
-                1. We believe in The Word of God. 2Timothy 3:16<br />
-                2. We believe in the absolute trinity of The Eternal God. 1 John
-                5:7-8<br />
-                3. We believe in the personality of The Holy Spirit. Acts 5:4
-                <br />
-                <!-- 4. We believe that salvation is by Grace through Faith and not
-                of works.<br /> -->
-                <!-- 5. We believe in the victorious life over sin. -->
+                We believe in the word of God. 2Timothy 3:16. <br />
+                We believe in the absolute trinity of the eternal God. <br />
+                1John 5:7-8. <br />
+                We believe in the gospel of our Lord Jesus.
               </p>
             </div>
             <div
               class="shadow rounded-md bg-ash hover:scale-105 hover:bg-yellow hover:shadow-md h-[250px] p-4 transition duration-500 ease-in-out w-full flex flex-col space-y-4 justify-center items-center"
             >
-              <h3 class="text-center text-[20px] font-[600]">
-                What we believe
-              </h3>
+              <h3 class="text-center text-[20px] font-[600]">Our Tenets</h3>
               <div class="h-[2px] w-[30%] bg-blac rounded-full"></div>
               <p class="text-center opacity-[0.7] text-sm">
-                4. We believe in Christian perfection and holiness through
-                absolute confession and consecration. <br />
-                5. We believe in the second coming of Jesus Christ. <br />
-                <!-- 8. We believe in Divine Healing. <br /> -->
-                <!-- 9. We believe in Tithing. <br /> -->
-                6. We believe in one man and one wife.
+                We believe that Salvation is by Grace through Faith and not by
+                works <br />
+                We believe in Tithing. <br />
+                We believe in one man and one wife. <br />
+                We believe in the second coming of our Lord Jesus Christ
               </p>
             </div>
           </div>
           <div class="flex-1 flex flex-col lg:flex-col">
-            <div class="flex-1 w-1/2 relative">
+            <div class="flex-1 w-full lg:w-1/2 relative">
               <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -259,7 +164,7 @@
                         Sunday Service
                       </h1>
                       <p>Every Sunday</p>
-                      <p>8am - 11:30am</p>
+                      <p>8am - 11:30pm</p>
                       <div
                         class="w-full flex justify-center items-center gap-6"
                       >
@@ -278,7 +183,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div
-                      style="background-image: url('/assets/img/church2.jpg')"
+                      style="background-image: url('/assets/img/church1.jpg')"
                       class="h-full w-full flex justify-center items-center flex-col gap-4 py-6"
                     >
                       <h1 class="font-[600] text-[32px] text-white">
@@ -313,7 +218,7 @@
                         Bible Study
                       </h1>
                       <p>Every Thursday</p>
-                      <p>5:30pm - 7:00pm</p>
+                      <p>5:30pm - 7:30pm/p></p>
                       <div
                         class="w-full flex justify-center items-center gap-6"
                       >
@@ -427,7 +332,29 @@
             <div class="h-[80%] mb-3 relative">
               <img
                 class="w-full h-full object-cover"
-                src="/assets//img/p1.jpeg"
+                src="/assets//img/Pst Magaji.png"
+                alt=""
+              />
+
+              <div
+                style="background-color: rgba(0, 0, 0, 0.3)"
+                class="pastor-social-icon absolute bottom-0 right-0 p-1"
+              >
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="px-4">
+              <h3 class="font-[600]">Pastor Magaji</h3>
+              <small class="text-yellow">Senior Pastor, Lagos State.</small>
+            </div>
+          </div>
+          <div class="pastor-card shadow-md">
+            <div class="h-[80%] mb-3 relative">
+              <img
+                class="w-full h-full object-cover"
+                src="/assets//img/Pst.png"
                 alt=""
               />
 
@@ -449,7 +376,7 @@
             <div class="h-[80%] mb-3 relative">
               <img
                 class="w-full h-full object-cover"
-                src="/assets//img/p2.jpg"
+                src="/assets//img/Pst david.png"
                 alt=""
               />
 
@@ -463,29 +390,7 @@
               </div>
             </div>
             <div class="px-4">
-              <h3 class="font-[600]">Pastor Mic Mike</h3>
-              <small class="text-yellow">Senior Pastor, Lagos State.</small>
-            </div>
-          </div>
-          <div class="pastor-card shadow-md">
-            <div class="h-[80%] mb-3 relative">
-              <img
-                class="w-full h-full object-cover"
-                src="/assets//img/p3.jpeg"
-                alt=""
-              />
-
-              <div
-                style="background-color: rgba(0, 0, 0, 0.3)"
-                class="pastor-social-icon absolute bottom-0 right-0 p-1"
-              >
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-              </div>
-            </div>
-            <div class="px-4">
-              <h3 class="font-[600]">Pastor Mic Mike</h3>
+              <h3 class="font-[600]">Pastor David</h3>
               <small class="text-yellow">Senior Pastor, Lagos State.</small>
             </div>
           </div>
@@ -581,32 +486,45 @@
       </div>
     </section>
 
-
-    
     <section id="salvation">
-      <div class="flex justify-center items-center  h-[40vh] w-full">
-        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row">
+      <div class="flex justify-center items-center h-[40vh] w-full">
+        <div
+          class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-4xl md:w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
+            <h1 class="text-4xl md:w-[70%] leading-[50px]">
+              Ready to begin your journey to destiny with Christ?
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border ">Become a Christian</button>
+            <button
+              class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border"
+            >
+              Become a Christian
+            </button>
           </div>
         </div>
       </div>
       <div class="flex justify-center items-center relative h-[20vh] w-full">
         <div class="overlay3"></div>
-        <div class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row">
+        <div
+          class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-2xl text-white leading-[50px]">We'll like to guide you <span class="font-[500]">towards the right direction</span></h1>
+            <h1 class="text-2xl text-white leading-[50px]">
+              We'll like to guide you
+              <span class="font-[500]">towards the right direction</span>
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet ">Book for Counselling</button>
+            <button
+              class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet"
+            >
+              Book for Counselling
+            </button>
           </div>
         </div>
       </div>
-
->>>>>>> 74bdc590cb8d215c6d26b5a0028f1db41361251c
     </section>
 
     <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
