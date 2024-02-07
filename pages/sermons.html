@@ -36,8 +36,8 @@
     <title>CKEM</title>
   </head>
   <body class="relative">
-    <header id="nav" class="fixed z-[9999] w-full py-3  ">
-      <nav  class="flex px-[4rem] justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -53,9 +53,16 @@
           </div>
           <li><a class="text-white" href="/">Home</a></li>
           <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-          <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
-          <li><a class="text-white active" href="/pages/sermons.html">Sermons</a></li>
-          <li><a class="text-white " href="/pages/events.html">Events</a></li>
+          <li>
+            <a class="text-white" href="/pages/contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a class="text-white active" href="/pages/sermons.html">Sermons</a>
+          </li>
+          <li><a class="text-white" href="/pages/events.html">Events</a></li>
+          <li>
+            <a class="text-white" href="/pages/donation.html">Donations</a>
+          </li>
           <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
             Watch Live
@@ -71,16 +78,16 @@
       </nav>
     </header>
 
-
-
     <section
-    style="background-image: url('/assets/img/serm.jpg')"
-    class="banner relative"
-  >
-    <div class="overlay2"></div>
-    <h1>SERMON</h1>
-    <p class="text-white"><span class="text-graz font-bold">Home</span> / Sermon</p>
-  </section>
+      style="background-image: url('/assets/img/serm.jpg')"
+      class="banner relative"
+    >
+      <div class="overlay2"></div>
+      <h1>SERMON</h1>
+      <p class="text-white">
+        <span class="text-graz font-bold">Home</span> / Sermon
+      </p>
+    </section>
 
     <!-------------------------------------------------------
     SERMONS
@@ -230,44 +237,63 @@
     </section>
 
     <section id="salvation">
-      <div class="flex justify-center items-center  h-[40vh] w-full">
-        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row">
+      <div class="flex justify-center items-center h-[40vh] w-full">
+        <div
+          class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-4xl md:w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
+            <h1 class="text-4xl md:w-[70%] leading-[50px]">
+              Ready to begin your journey to destiny with Christ?
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border ">Become a Christian</button>
+            <button
+              class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border"
+            >
+              Become a Christian
+            </button>
           </div>
         </div>
       </div>
       <div class="flex justify-center items-center relative h-[20vh] w-full">
         <div class="overlay3"></div>
-        <div class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row">
+        <div
+          class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-2xl text-white leading-[50px]">We'll like to guide you <span class="font-[500]">towards the right direction</span></h1>
+            <h1 class="text-2xl text-white leading-[50px]">
+              We'll like to guide you
+              <span class="font-[500]">towards the right direction</span>
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet ">Book for Counselling</button>
+            <button
+              class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet"
+            >
+              Book for Counselling
+            </button>
           </div>
         </div>
       </div>
-
     </section>
 
-    <footer
-      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
-    >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+    <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
+      <div
+        class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]"
+      >
         <div class="space-y-4">
           <div class="flex space-x-2 justify-start items-center">
-            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
-            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+            <img
+              class="w-[60px] h-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+            />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1>
           </div>
-         
 
           <p class="text-graz text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+            ...raising an Army for the Expansion of God's Kingdom. Hebrews
+            11:33-34
           </p>
 
           <div></div>
@@ -284,10 +310,21 @@
         <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
           <ul class="text-graz text-sm space-y-2">
-            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li><a href="">Phone: +2348123456788</a></li>
-            <li><a href="">Email: ckem@gmail.com</a></li>
-            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+            <li>
+              Address: 5&6 Daniel Asuku Str, <br />Progress Estate, Off Obasanjo
+              road, <br />Ota, <br />
+              Ogun State.
+            </li>
+            <li><a href="">Phone: +2349138503592</a></li>
+            <li><a href="">Email: ckeminternational@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1">
+              <input
+                class="bg-transparent outline-none text-blac"
+                type="text"
+                placeholder="Subscribe for News Letters"
+              />
+              <button class="h-full pryBtn px-3">Subscribe</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -301,8 +338,8 @@
         </p>
       </div>
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="/scripts/script.js"></script>
-      <script src="/scripts/testimony.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/testimony.js"></script>
   </body>
 </html>

@@ -44,8 +44,8 @@
     <title>Contact Us</title>
   </head>
   <body>
-    <header id="nav" class="fixed z-[9999] w-full py-3  ">
-      <nav  class="flex px-[4rem] justify-between items-center w-full">
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
         <div>
           <a href="/"
             ><img
@@ -61,9 +61,16 @@
           </div>
           <li><a class="text-white" href="/">Home</a></li>
           <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-          <li><a class="text-white active" href="/pages/contact.html">Contact Us</a></li>
+          <li>
+            <a class="text-white active" href="/pages/contact.html"
+              >Contact Us</a
+            >
+          </li>
           <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
-          <li><a class="text-white " href="/pages/events.html">Events</a></li>
+          <li><a class="text-white" href="/pages/events.html">Events</a></li>
+          <li>
+            <a class="text-white" href="/pages/donation.html">Donations</a>
+          </li>
           <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
           <button class="pryBtn block lg:hidden w-full shadow transition">
             Watch Live
@@ -79,14 +86,15 @@
       </nav>
     </header>
 
-
     <section
       style="background-image: url('/assets/img/sermon.avif')"
       class="banner relative"
     >
       <div class="overlay2"></div>
       <h1>CONTACT US</h1>
-      <p class="text-white"><span class="text-graz font-bold">Home</span> / Contact Us</p>
+      <p class="text-white">
+        <span class="text-graz font-bold">Home</span> / Contact Us
+      </p>
     </section>
 
     <section class="location">
@@ -109,20 +117,18 @@
       ></iframe>
     </section>
 
-    
-        <div class="">
-          <h3 class="header-title">We'll Like to Hear From You</h3>
-          <div class="marker !mb-0">
-            <div class="line"></div>
-            <div class="circle"></div>
-            <div class="line"></div>
-          </div>
-        </div>
-    <section class=" bg-ash py-6 contact us">
+    <div class="">
+      <h3 class="header-title">We'll Like to Hear From You</h3>
+      <div class="marker !mb-0">
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <section class="bg-ash py-6 contact us">
       <div class="row px-[2rem] md:px-[8rem]">
-
         <div class="contact-col">
-          <div >
+          <div>
             <i class="fa fa-home"></i>
             <span>
               <h5 class="!font-bold text-blac">CKEM INT'L HQ</h5>
@@ -162,35 +168,58 @@
             <span>
               <h6>LEAVE A MESSAGE</h6>
             </span>
-            <input class="rounded-lg shadow-lg focus:border-scarlet" type="text" placeholder="Enter your name" required />
+            <input
+              class="rounded-lg shadow-lg focus:border-scarlet"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
             <input
               type="email"
               placeholder="Enter email address and Phone number"
               required
               class="rounded-lg shadow-lg focus:border-scarlet"
             />
-            <input class="rounded-lg shadow-lg focus:border-scarlet" type="text" placeholder="Enter your subject" required />
-            <textarea class="rounded-lg shadow-lg focus:border-scarlet" rows="8" Message placeholder="Message"></textarea>
-            <button type="submit" class="hero-btn red-btn bg-scarlet text-white shadow-lg">SUBMIT MESSAGE</button>
+            <input
+              class="rounded-lg shadow-lg focus:border-scarlet"
+              type="text"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              class="rounded-lg shadow-lg focus:border-scarlet"
+              rows="8"
+              Message
+              placeholder="Message"
+            ></textarea>
+            <button
+              type="submit"
+              class="hero-btn red-btn bg-scarlet text-white shadow-lg"
+            >
+              SUBMIT MESSAGE
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-    <footer
-      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
-    >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+    <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
+      <div
+        class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]"
+      >
         <div class="space-y-4">
           <div class="flex space-x-2 justify-start items-center">
-            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
-            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+            <img
+              class="w-[60px] h-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+            />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1>
           </div>
-         
 
           <p class="text-graz text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+            ...raising an Army for the Expansion of God's Kingdom. Hebrews
+            11:33-34
           </p>
 
           <div></div>
@@ -207,10 +236,21 @@
         <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
           <ul class="text-graz text-sm space-y-2">
-            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li><a href="">Phone: +2348123456788</a></li>
-            <li><a href="">Email: ckem@gmail.com</a></li>
-            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+            <li>
+              Address: 5&6 Daniel Asuku Str, <br />Progress Estate, Off Obasanjo
+              road, <br />Ota, <br />
+              Ogun State.
+            </li>
+            <li><a href="">Phone: +2349138503592</a></li>
+            <li><a href="">Email: ckeminternational@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1">
+              <input
+                class="bg-transparent outline-none text-blac"
+                type="text"
+                placeholder="Subscribe for News Letters"
+              />
+              <button class="h-full pryBtn px-3">Subscribe</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -223,46 +263,46 @@
           © 2024 CKEM INT'L. All Rights Reserved.
         </p>
       </div>
-    </footer>     
-      <script>
-        ((g) => {
-          var h,
-            a,
-            k,
-            p = "The Google Maps JavaScript API",
-            c = "google",
-            l = "importLibrary",
-            q = "__ib__",
-            m = document,
-            b = window;
-          b = b[c] || (b[c] = {});
-          var d = b.maps || (b.maps = {}),
-            r = new Set(),
-            e = new URLSearchParams(),
-            u = () =>
-              h ||
-              (h = new Promise(async (f, n) => {
-                await (a = m.createElement("script"));
-                e.set("libraries", [...r] + "");
-                for (k in g)
-                  e.set(
-                    k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
-                    g[k]
-                  );
-                e.set("callback", c + ".maps." + q);
-                a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-                d[q] = f;
-                a.onerror = () => (h = n(Error(p + " could not load.")));
-                a.nonce = m.querySelector("script[nonce]")?.nonce || "";
-                m.head.append(a);
-              }));
-          d[l]
-            ? console.warn(p + " only loads once. Ignoring:", g)
-            : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-        })({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
-      </script>    
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="/scripts/script.js"></script>
-      <script src="/scripts/testimony.js"></script>
+    </footer>
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = "The Google Maps JavaScript API",
+          c = "google",
+          l = "importLibrary",
+          q = "__ib__",
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + " could not load.")));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + " only loads once. Ignoring:", g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/testimony.js"></script>
   </body>
 </html>

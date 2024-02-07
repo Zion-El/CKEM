@@ -1,286 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/landing.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2cb29d167e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                scarlet: '#bd302d',
-                yellow: '#e2a822',
-                graz: '#d2d0b8',
-                ash: '#e6f1ef',
-                blac: '#2f2f2c',
-              },
-               FontFace:{
-                int: 'Inter, San'
-               }
-            }
-          }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              scarlet: "#bd302d",
+              yellow: "#e2a822",
+              graz: "#d2d0b8",
+              ash: "#e6f1ef",
+              blac: "#2f2f2c",
+            },
+            FontFace: {
+              int: "Inter, San",
+            },
+          },
+        },
+      };
     </script>
     <title>CKEM</title>
-</head>
-<body>
-
-
-
-  <header id="nav" class="fixed z-[9999] w-full py-3  ">
-    <nav  class="flex px-[4rem] justify-between items-center w-full">
-      <div>
-        <a href="/"
-          ><img
-            class="h-[60px] w-[60px]"
-            src="/assets/img/ckem logo.png"
-            alt="Logo"
-        /></a>
-      </div>
-
-      <ul id="sidebar" class="nav-container">
-        <div class="absolute opacity-10 z-[-1] block lg:hidden">
-          <img src="/assets/img/ckem logo.png" alt="" />
+  </head>
+  <body>
+    <header id="nav" class="fixed z-[9999] w-full py-3">
+      <nav class="flex px-[4rem] justify-between items-center w-full">
+        <div>
+          <a href="/"
+            ><img
+              class="h-[60px] w-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+          /></a>
         </div>
-        <li><a class="text-white" href="/">Home</a></li>
-        <li><a class="text-white" href="/pages/about.html">About Us</a></li>
-        <li><a class="text-white" href="/pages/contact.html">Contact Us</a></li>
-        <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
-        <li><a class="text-white " href="/pages/events.html">Events</a></li>
-        <li><a class="text-white active" href="/pages/donation.html">Donations</a></li>
-        <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
-        <button class="pryBtn block lg:hidden w-full shadow transition">
+
+        <ul id="sidebar" class="nav-container">
+          <div class="absolute opacity-10 z-[-1] block lg:hidden">
+            <img src="/assets/img/ckem logo.png" alt="" />
+          </div>
+          <li><a class="text-white" href="/">Home</a></li>
+          <li><a class="text-white" href="/pages/about.html">About Us</a></li>
+          <li>
+            <a class="text-white" href="/pages/contact.html">Contact Us</a>
+          </li>
+          <li><a class="text-white" href="/pages/sermons.html">Sermons</a></li>
+          <li><a class="text-white" href="/pages/events.html">Events</a></li>
+          <li>
+            <a class="text-white active" href="/pages/donation.html"
+              >Donations</a
+            >
+          </li>
+          <li><a class="text-white" href="/pages/blog.html">Blog</a></li>
+          <button class="pryBtn block lg:hidden w-full shadow transition">
+            Watch Live
+          </button>
+        </ul>
+
+        <button class="pryBtn w-[150px] shadow transition hidden lg:block">
           Watch Live
         </button>
-      </ul>
-
-      <button class="pryBtn w-[150px] shadow transition hidden lg:block">
-        Watch Live
-      </button>
-      <button id="toogleBtn" class="text-graz block lg:hidden">
-        <i id="tooglerIcon" class="fa fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+        <button id="toogleBtn" class="text-graz block lg:hidden">
+          <i id="tooglerIcon" class="fa fa-bars"></i>
+        </button>
+      </nav>
+    </header>
     <!-- -----------------------------------------------------
     HERO
     ----------------------------------------------------- -->
 
-    <section style="background-image: url('/assets/img/blog.avif');" class="banner relative">
-        <div class="overlay2"></div>
-        <h1>DONATIONS</h1>
-        <p class="text-white"><span class="text-graz font-bold">Home</span> / Donations</p>
+    <section
+      style="background-image: url('/assets/img/blog.avif')"
+      class="banner relative"
+    >
+      <div class="overlay2"></div>
+      <h1>DONATIONS</h1>
+      <p class="text-white">
+        <span class="text-graz font-bold">Home</span> / Donations
+      </p>
     </section>
 
     <section class="content">
-            <div class="px-[4rem]">
-              <div>
-                <h3 class="header-title">Giving towards an honourable cause</h3>
-                <div class="marker">
-                  <div class="line"></div>
-                  <div class="circle"></div>
-                  <div class="line"></div>
-                </div>
-              </div>
-      
-              <div
-                class="w-full grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4"
+      <div class="px-[4rem]">
+        <div>
+          <h3 class="header-title">Giving towards an honourable cause</h3>
+          <div class="marker">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div
+          class="w-full grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="donate-card shadow-lg bg-[#f7f8f9] border">
+            <div class="donate-img relative">
+              <a class="absolute top-0 left-0" href="/pages/blog-details.html"
+                ><button
+                  class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]"
+                >
+                  Donate towards
+                </button></a
               >
-                <div class="donate-card shadow-lg bg-[#f7f8f9] border">
-                  <div class="donate-img relative">
-                    <a class="absolute top-0 left-0" href="/pages/blog-details.html"><button class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]">Donate towards</button></a>
-                    <img
-                      class="w-full h-full"
-                      src="/assets/img/sermon1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3 space-y-4">
-                    <div>
-                        <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores?</p>
-                    </div>
+              <img class="w-full h-full" src="/assets/img/sermon1.jpg" alt="" />
+            </div>
+            <div class="p-3 space-y-4">
+              <div>
+                <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, maiores?
+                </p>
+              </div>
 
-                    <div class="w-full flex justify-between items-center">
-                        <p class="text-[12px] font-[500] opacity-50 ">Target: #100,000</p>
-                        <p class="text-[12px] font-[500] opacity-50 ">Achieved: #80,000</p>
-                    </div>
-                    <div class="w-full">
-                        <button class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full" onclick="showModal()">Donate Now</button>
-                    </div>
-
-
-                    
-                  </div>
-                </div>
-                <div class="donate-card shadow-lg bg-[#f7f8f9] border">
-                  <div class="donate-img relative">
-                    <a class="absolute top-0 left-0" href="/pages/blog-details.html"><button class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]">Donate towards</button></a>
-                    <img
-                      class="w-full h-full"
-                      src="/assets/img/sermon1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3 space-y-4">
-                    <div>
-                        <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores?</p>
-                    </div>
-
-                    <div class="w-full flex justify-between items-center">
-                        <p class="text-[12px] font-[500] opacity-50 ">Target: #100,000</p>
-                        <p class="text-[12px] font-[500] opacity-50 ">Achieved: #80,000</p>
-                    </div>
-                    <div class="w-full">
-                        <button class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full" onclick="showModal()">Donate Now</button>
-                    </div>
-
-
-                    
-                  </div>
-                </div>
-                <div class="donate-card shadow-lg bg-[#f7f8f9] border">
-                  <div class="donate-img relative">
-                    <a class="absolute top-0 left-0" href="/pages/blog-details.html"><button class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]">Donate towards</button></a>
-                    <img
-                      class="w-full h-full"
-                      src="/assets/img/sermon1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3 space-y-4">
-                    <div>
-                        <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores?</p>
-                    </div>
-
-                    <div class="w-full flex justify-between items-center">
-                        <p class="text-[12px] font-[500] opacity-50 ">Target: #100,000</p>
-                        <p class="text-[12px] font-[500] opacity-50 ">Achieved: #80,000</p>
-                    </div>
-                    <div class="w-full">
-                        <button class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full" onclick="showModal()">Donate Now</button>
-                    </div>
-
-
-                    
-                  </div>
-                </div>
-                <div class="donate-card shadow-lg bg-[#f7f8f9] border">
-                  <div class="donate-img relative">
-                    <a class="absolute top-0 left-0" href="/pages/blog-details.html"><button class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]">Donate towards</button></a>
-                    <img
-                      class="w-full h-full"
-                      src="/assets/img/sermon1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3 space-y-4">
-                    <div>
-                        <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores?</p>
-                    </div>
-
-                    <div class="w-full flex justify-between items-center">
-                        <p class="text-[12px] font-[500] opacity-50 ">Target: #100,000</p>
-                        <p class="text-[12px] font-[500] opacity-50 ">Achieved: #80,000</p>
-                    </div>
-                    <div class="w-full">
-                        <button class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full" onclick="showModal()">Donate Now</button>
-                    </div>
-
-
-                    
-                  </div>
-                </div>
-  
-
+              <div class="w-full flex justify-between items-center">
+                <p class="text-[12px] font-[500] opacity-50">
+                  Target: #100,000
+                </p>
+                <p class="text-[12px] font-[500] opacity-50">
+                  Achieved: #80,000
+                </p>
+              </div>
+              <div class="w-full">
+                <button
+                  class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full"
+                  onclick="showModal()"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
+          </div>
+          <div class="donate-card shadow-lg bg-[#f7f8f9] border">
+            <div class="donate-img relative">
+              <a class="absolute top-0 left-0" href="/pages/blog-details.html"
+                ><button
+                  class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]"
+                >
+                  Donate towards
+                </button></a
+              >
+              <img class="w-full h-full" src="/assets/img/sermon1.jpg" alt="" />
+            </div>
+            <div class="p-3 space-y-4">
+              <div>
+                <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, maiores?
+                </p>
+              </div>
+
+              <div class="w-full flex justify-between items-center">
+                <p class="text-[12px] font-[500] opacity-50">
+                  Target: #100,000
+                </p>
+                <p class="text-[12px] font-[500] opacity-50">
+                  Achieved: #80,000
+                </p>
+              </div>
+              <div class="w-full">
+                <button
+                  class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full"
+                  onclick="showModal()"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="donate-card shadow-lg bg-[#f7f8f9] border">
+            <div class="donate-img relative">
+              <a class="absolute top-0 left-0" href="/pages/blog-details.html"
+                ><button
+                  class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]"
+                >
+                  Donate towards
+                </button></a
+              >
+              <img class="w-full h-full" src="/assets/img/sermon1.jpg" alt="" />
+            </div>
+            <div class="p-3 space-y-4">
+              <div>
+                <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, maiores?
+                </p>
+              </div>
+
+              <div class="w-full flex justify-between items-center">
+                <p class="text-[12px] font-[500] opacity-50">
+                  Target: #100,000
+                </p>
+                <p class="text-[12px] font-[500] opacity-50">
+                  Achieved: #80,000
+                </p>
+              </div>
+              <div class="w-full">
+                <button
+                  class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full"
+                  onclick="showModal()"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="donate-card shadow-lg bg-[#f7f8f9] border">
+            <div class="donate-img relative">
+              <a class="absolute top-0 left-0" href="/pages/blog-details.html"
+                ><button
+                  class="py-2 px-6 bg-scarlet border border-white hover:opacity-100 ease-in-out transition-all duration-500 text-[12px]"
+                >
+                  Donate towards
+                </button></a
+              >
+              <img class="w-full h-full" src="/assets/img/sermon1.jpg" alt="" />
+            </div>
+            <div class="p-3 space-y-4">
+              <div>
+                <h1 class="font-bold">Lorem ipsum dolor sit amet.</h1>
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, maiores?
+                </p>
+              </div>
+
+              <div class="w-full flex justify-between items-center">
+                <p class="text-[12px] font-[500] opacity-50">
+                  Target: #100,000
+                </p>
+                <p class="text-[12px] font-[500] opacity-50">
+                  Achieved: #80,000
+                </p>
+              </div>
+              <div class="w-full">
+                <button
+                  class="bg-scarlet text-white font-bold p-2 rounded-2xl w-full"
+                  onclick="showModal()"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-        <div class="container grid grid-cols-1 md:grid-cols-3">
-            <div class="p-4 md:border-r space-y-6 flex flex-col justify-center items-center">
-                <p>Pay Your Offering Onlinee</p>
-                <small>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque beatae deserunt, autem tempora nesciunt qui.
-                </small>
-                <button class="bg-[green]" onclick="showModal()">Pay Now</button>
-            </div>
-            <div class="p-4 md:border-r space-y-6 flex flex-col justify-center items-center">
-                <p>Pay Your Offering Onlinee</p>
-                <small>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque beatae deserunt, autem tempora nesciunt qui.
-                </small>
-                <button onclick="showModal()">Pay Now</button>
-            </div>
-            <div class="p-4  space-y-6 flex flex-col justify-center items-center">
-                <p>Pay Your Offering Onlinee</p>
-                <small>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque beatae deserunt, autem tempora nesciunt qui.
-                </small>
-                <button onclick="showModal()">Pay Now</button>
-            </div>
+      <div class="container grid grid-cols-1 md:grid-cols-3">
+        <div
+          class="p-4 md:border-r space-y-6 flex flex-col justify-center items-center"
+        >
+          <p>Pay Your Offering Onlinee</p>
+          <small>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            beatae deserunt, autem tempora nesciunt qui.
+          </small>
+          <button class="bg-[green]" onclick="showModal()">Pay Now</button>
         </div>
+        <div
+          class="p-4 md:border-r space-y-6 flex flex-col justify-center items-center"
+        >
+          <p>Pay Your Offering Onlinee</p>
+          <small>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            beatae deserunt, autem tempora nesciunt qui.
+          </small>
+          <button onclick="showModal()">Pay Now</button>
+        </div>
+        <div class="p-4 space-y-6 flex flex-col justify-center items-center">
+          <p>Pay Your Offering Onlinee</p>
+          <small>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            beatae deserunt, autem tempora nesciunt qui.
+          </small>
+          <button onclick="showModal()">Pay Now</button>
+        </div>
+      </div>
     </section>
 
     <section id="salvation">
-      <div class="flex justify-center items-center  h-[40vh] w-full">
-        <div class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row">
+      <div class="flex justify-center items-center h-[40vh] w-full">
+        <div
+          class="px-[2rem] lg:px-[4rem] w-full flex justify-between items-center flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-4xl md:w-[70%] leading-[50px]">Ready to begin your journey to destiny with Christ?</h1>
+            <h1 class="text-4xl md:w-[70%] leading-[50px]">
+              Ready to begin your journey to destiny with Christ?
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border ">Become a Christian</button>
+            <button
+              class="p-3 w-[250px] rounded-2xl bg-scarlet shadow-lg font-bold text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-scarlet hover:border-scarlet hover:border"
+            >
+              Become a Christian
+            </button>
           </div>
         </div>
       </div>
       <div class="flex justify-center items-center relative h-[20vh] w-full">
         <div class="overlay3"></div>
-        <div class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row">
+        <div
+          class="px-[2rem] lg:px-[4rem] flex justify-start md:justify-between items-center w-full flex-col gap-4 lg:flex-row"
+        >
           <div>
-            <h1 class="text-2xl text-white leading-[50px]">We'll like to guide you <span class="font-[500]">towards the right direction</span></h1>
+            <h1 class="text-2xl text-white leading-[50px]">
+              We'll like to guide you
+              <span class="font-[500]">towards the right direction</span>
+            </h1>
           </div>
           <div>
-            <button class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet ">Book for Counselling</button>
+            <button
+              class="p-3 w-[250px] font-[100] rounded-2xl bg-white shadow-lg font-bold text-scarlet transition-all duration-500 ease-in-out hover:bg-blac hover:text-scarlet"
+            >
+              Book for Counselling
+            </button>
           </div>
         </div>
       </div>
-
     </section>
 
-    <footer
-      class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]"
-    >
-      <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]">
+    <footer class="bg-black text-white w-full px-[2rem] lg:px-[4rem] pt-[3rem]">
+      <div
+        class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[3rem]"
+      >
         <div class="space-y-4">
           <div class="flex space-x-2 justify-start items-center">
-            <img class="w-[60px] h-[60px]" src="/assets/img/ckem logo.png" alt="Logo" />
-            <h1 class="font-[700] text-2xl">CKEM INT'L</h1> 
+            <img
+              class="w-[60px] h-[60px]"
+              src="/assets/img/ckem logo.png"
+              alt="Logo"
+            />
+            <h1 class="font-[700] text-2xl">CKEM INT'L</h1>
           </div>
-         
 
           <p class="text-graz text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            nesciunt fugiat reiciendis cupiditate perferendis? Praesentium.
+            ...raising an Army for the Expansion of God's Kingdom. Hebrews
+            11:33-34
           </p>
 
           <div></div>
@@ -297,10 +377,21 @@
         <div class="space-y-4">
           <h3 class="hd1">Contact Us</h3>
           <ul class="text-graz text-sm space-y-2">
-            <li>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li><a href="">Phone: +2348123456788</a></li>
-            <li><a href="">Email: ckem@gmail.com</a></li>
-            <li class="bg-white w-full px-2 py-1"><input class="bg-transparent outline-none text-blac " type="text" placeholder="Subscribe for News Letters"> <button class="h-full pryBtn px-3 ">Subscribe</button></li>
+            <li>
+              Address: 5&6 Daniel Asuku Str, <br />Progress Estate, Off Obasanjo
+              road, <br />Ota, <br />
+              Ogun State.
+            </li>
+            <li><a href="">Phone: +2349138503592</a></li>
+            <li><a href="">Email: ckeminternational@gmail.com</a></li>
+            <li class="bg-white w-full px-2 py-1">
+              <input
+                class="bg-transparent outline-none text-blac"
+                type="text"
+                placeholder="Subscribe for News Letters"
+              />
+              <button class="h-full pryBtn px-3">Subscribe</button>
+            </li>
           </ul>
         </div>
         <div>
@@ -316,33 +407,50 @@
     </footer>
 
     <section id="modal" class="modal">
-      <div id="modal-overlay" class="modal-overlay">
-  
-      </div>
-      <div class="modal-content bg-white shadow-2xl rounded-2xl p-10 w-[80%] md:w-[60%] lg:w-[50%]">
-
+      <div id="modal-overlay" class="modal-overlay"></div>
+      <div
+        class="modal-content bg-white shadow-2xl rounded-2xl p-10 w-[80%] md:w-[60%] lg:w-[50%]"
+      >
         <div class="relative w-full h-full">
           <button class="absolute top-[-30px] right-[-16px]">
-            <i id="cancel" class="fa fa-times border rounded-full px-3 py-2"></i>
+            <i
+              id="cancel"
+              class="fa fa-times border rounded-full px-3 py-2"
+            ></i>
           </button>
-          
+
           <div>
             <form action="" class="space-y-4">
               <div>
                 <p>Full Name</p>
-                <input class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500" placeholder="Enter full name" type="text">
+                <input
+                  class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500"
+                  placeholder="Enter full name"
+                  type="text"
+                />
               </div>
               <div>
                 <p>Email</p>
-                <input class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500" placeholder="Enter email address" type="text">
+                <input
+                  class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500"
+                  placeholder="Enter email address"
+                  type="text"
+                />
               </div>
               <div>
                 <p>Phone</p>
-                <input class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500" type="text">
+                <input
+                  class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500"
+                  type="text"
+                />
               </div>
               <div>
                 <p>Purpose</p>
-                <select name="" id="" class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500">
+                <select
+                  name=""
+                  id=""
+                  class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500"
+                >
                   <option value="">Help to Needy</option>
                   <option value="">Help to Needy</option>
                   <option value="">Help to Needy</option>
@@ -351,29 +459,36 @@
               </div>
               <div>
                 <p>Amount</p>
-                <input class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500" type="number">
+                <input
+                  class="p-3 border outline-none rounded-md shadow-lg w-full focus:border-scarlet focus:bg-ash transition-all ease-in-out duration-500"
+                  type="number"
+                />
               </div>
-            
-              <div> 
+
+              <div>
                 <small class="italic">Make Payment via:</small>
                 <div class="w-full flex justify-between items-center">
-                  <button class="px-10 py-3 font-[600] text-[16px] text-white bg-yellow rounded-lg shadow-md">Online Payment</button>
-                  <button class="px-10 py-3 font-[600] text-[16px] text-white bg-[green] rounded-lg shadow-md">Bank Transfer</button>                
+                  <button
+                    class="px-10 py-3 font-[600] text-[16px] text-white bg-yellow rounded-lg shadow-md"
+                  >
+                    Online Payment
+                  </button>
+                  <button
+                    class="px-10 py-3 font-[600] text-[16px] text-white bg-[green] rounded-lg shadow-md"
+                  >
+                    Bank Transfer
+                  </button>
                 </div>
-
               </div>
-              
             </form>
           </div>
         </div>
-
-
-      </div>  
+      </div>
     </section>
-    
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="/scripts/donation.js"></script>
-  <script src="/scripts/script.js"></script>
-  <script src="/scripts/testimony.js"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/donation.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/testimony.js"></script>
+  </body>
 </html>
